@@ -12,6 +12,6 @@ document.getElementById('search-bar').addEventListener('input', (e) => {
     const cards = document.querySelectorAll('.cat-card'); 
     cards.forEach(card => { 
         const name = card.querySelector('span').textContent.toLowerCase(); 
-        card.style.display = name.includes(search) ? 'flex' : 'none';                   
+        card.style.display = name.includes(search) ? '' : 'none';                   
     }); 
 });
