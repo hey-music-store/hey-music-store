@@ -7,11 +7,3 @@ function agregarAlCarrito(nombreProducto) {
         notificacion.classList.add('oculta');
     }, 3000);
 }
-document.getElementById('search-bar').addEventListener('input', (e) => { 
-    const search = e.target.value.toLowerCase(); 
-    const cards = document.querySelectorAll('.cat-card'); 
-    cards.forEach(card => { 
-        const name = card.querySelector('span').textContent.toLowerCase(); 
-        card.style.display = name.includes(search)? '';
-    })                   
-    }); 
