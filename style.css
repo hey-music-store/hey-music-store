@@ -152,7 +152,7 @@ body {
   display: flex;
 }
 
-.search-bar input {
+#search-bar {
   width: 100%;
   padding: 10px 15px;
   border: 1px solid #cccccc;
