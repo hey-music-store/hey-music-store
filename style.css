@@ -308,10 +308,10 @@ body {
   padding: 10px;
   cursor: pointer;
 }
-
+/*=========================== Tamaño de las imagenes del catálogo ========================*/
 .cat-card img {
-  width: 100px;
-  height: 100px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
 }
 
