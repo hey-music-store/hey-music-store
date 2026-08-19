@@ -280,26 +280,22 @@ body {
   writing-mode: vertical-rl;
   border-radius: 4px 0 0 4px;
 }
-
 /* ==================== 5. SECCIÓN DE CATALOGO ==================== */
 .main-content {
   margin-top: 30px;
   margin-bottom: 50px;
 }
-
 .shop-title {
   font-size: 18px;
   font-weight: bold;
   color: #222222;
   margin-bottom: 25px;
 }
-
 .categories-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-
 .cat-card {
   display: flex;
   align-items: center;
@@ -320,7 +316,6 @@ body {
   font-weight: bold;
   color: #111111;
 }
-
 /* ==================== ADAPTACIÓN MÓVIL (RESPONSIVE) ==================== */
 @media (max-width: 768px) {
   .header-benefits, 
@@ -328,15 +323,12 @@ body {
   .top-left a:nth-child(2) {
     display: none;
   }
-
   .categories-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .banner-price {
     font-size: 28px;
   }
-  
   .banner-price span {
     font-size: 38px;
   }
