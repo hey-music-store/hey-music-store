@@ -144,7 +144,7 @@ body {
 }
 
 /* ==================== 3. BARRA DE BÚSQUEDA ==================== */
-.search-section {
+/* .search-section {
   padding-bottom: 15px;
 }
 
@@ -169,7 +169,7 @@ body {
   cursor: pointer;
   font-size: 16px;
 }
-
+*/
 /* ==================== 4. BANNER HERO ==================== */
 .banner-hero {
   background: linear-gradient(90deg, #1a0205 0%, #600c14 50%, #1a0205 100%);
