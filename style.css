@@ -336,8 +336,15 @@ body {
   .banner-price {
     font-size: 28px;
   }
-
+  
   .banner-price span {
     font-size: 38px;
   }
 }
+  /* =========                Boton Whatasapp            ================*/
+  .whatsapp-bottom{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
