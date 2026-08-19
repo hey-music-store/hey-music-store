@@ -281,7 +281,7 @@ body {
   border-radius: 4px 0 0 4px;
 }
 
-/* ==================== 5. SECCIÓN DE CATEGORÍAS ==================== */
+/* ==================== 5. SECCIÓN DE CATALOGO ==================== */
 .main-content {
   margin-top: 30px;
   margin-bottom: 50px;
@@ -310,8 +310,8 @@ body {
 }
 
 .cat-card img {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
 }
 
