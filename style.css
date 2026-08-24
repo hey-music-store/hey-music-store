@@ -1,3 +1,6 @@
+body {
+    background-color: red !important;
+}
 /* ==================== RESET Y CONFIGURACIÓN BÁSICA ==================== */
 * {
     box-sizing: border-box;
