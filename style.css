@@ -33,7 +33,39 @@ header {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
+/* Tarjeta principal: Imagen a la izquierda, detalles a la derecha */
+.cat-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+}
 
+/* Contenedor de texto: Apila las líneas una sobre otra */
+.card-details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px; /* Espacio vertical entre el título y las líneas */
+    text-align: left;
+}
+
+/* Estilo del título principal */
+.card-details h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #111111;
+    margin: 0;
+}
+
+/* Estilo de los textos secundarios */
+.card-details p {
+    font-size: 0.95rem;
+    color: #444444;
+    margin: 0;
+}
 .cat-card {
   display: flex;
   flex-items: row;
