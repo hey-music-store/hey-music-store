@@ -45,14 +45,14 @@ header {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-
+/*
 .cat-card {
     background-color: white;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 6px;
     text-align: center;
-}
+}*/
 .cat-card img {
     width: 100%;
     height: auto;
