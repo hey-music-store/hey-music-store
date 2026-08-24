@@ -17,25 +17,6 @@ header {
     margin-bottom: 20px;
 }
 
-.search-section {
-  padding-bottom: 15px;
-}
-
-#search-bar {
-    width: 60%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-.btn-search {
-    padding: 10px 20px;
-    background-color: #0021b3;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
 
 /* ==================== 5. SECCIÓN DE CATALOGO ==================== */
 .main-content {
