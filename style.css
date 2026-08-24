@@ -202,3 +202,48 @@ header {
     left: 20px;
     z-index: 1000;
   }
+/* $$$$$$$$$$$$$$$$$$$$$$$$ Adaptación para pantallas de celulares $$$$$$$$$$$$$$$$$$$$$$$$$*/
+@media (max-width: 768px) {
+    /* 1. Encabezado en columna centrada */
+    .main-header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        text-align: center;
+    }
+
+    /* 2. Buscador a ancho completo */
+    .search-container {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .search-input {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    /* 3. Catálogo en 1 sola columna */
+    .categories-grid, .catalog-grid {
+        grid-template-columns: 1fr !important;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    /* 4. Tarjetas internas verticales */
+    .cat-card {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cat-card img {
+        max-width: 180px;
+        height: auto;
+    }
+
+    .card-details {
+        align-items: center;
+    }
+}
