@@ -30,7 +30,7 @@ header {
 /*===================== Mostrar N colunas de imagenes de articulos ============*/
 .categories-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 
@@ -45,8 +45,8 @@ header {
 
 /*=========================== Tamaño de las imagenes del catálogo ========================*/
 .cat-card img {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
 }
 
