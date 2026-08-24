@@ -39,24 +39,57 @@ header {
     border-radius: 4px;
     cursor: pointer;
 }
+/* ==================== 5. SECCIÓN DE CATALOGO ==================== */
+.main-content {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+/*===================== Mostrar N colunas de imagenes de articulos ============*/
 
 .categories-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
-/*
 .cat-card {
-    background-color: white;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    text-align: center;
-}*/
-.cat-card {
-    width: 100%;
-    height: auto;
-    display: block;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  cursor: pointer;
+}
+/*=========================== Tamaño de las imagenes del catálogo ========================*/
+.cat-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+/*=========================== tamaño de texto de tedalles de articulos ==================*/
+.cat-card span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #111111;
+}
+/* ==================== ADAPTACIÓN MÓVIL (RESPONSIVE) ==================== */
+@media (max-width: 768px) {
+  .header-benefits, 
+  .banner-surprise, 
+  .top-left a:nth-child(2) {
+    display: none;
+  }
+  
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .banner-price {
+    font-size: 28px;
+  }
+  
+  .banner-price span {
+    font-size: 38px;
+  }
 }
   /* =========      Boton Whatasapp     ================*/
   .whatsapp-bottom {
