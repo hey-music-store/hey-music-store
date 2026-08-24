@@ -106,9 +106,12 @@ header {
 }
 /* %%%%%%%%%%%%%%%%%%%%%% El boton de comprar es desde acá %%%%%%%%%%%%%%%%%%%%%%%*/
 .btn-buy {
-    margin-top: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; /* Espacio entre el icono y el texto */
     padding: 10px 18px;
-    background-color: #25d366; /* Verde llamativo estilo WhatsApp / Compra */
+    background-color: #25d366;
     color: white;
     font-size: 0.95rem;
     font-weight: bold;
@@ -116,6 +119,10 @@ header {
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.btn-buy i {
+    font-size: 1.2rem; /* Tamaño del icono */
 }
 
 /* Efecto al pasar el cursor sobre el botón */
