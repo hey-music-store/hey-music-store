@@ -36,9 +36,9 @@ header {
 /* Tarjeta principal: Imagen a la izquierda, detalles a la derecha */
 .cat-card {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    flex-direction: flex;
+    align-items: left;
+    text-align: left;
     gap: 20px;
     background-color: #ffffff;
     padding: 15px;
