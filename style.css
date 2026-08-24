@@ -29,9 +29,11 @@ body {
 
 /* Imagen / Logo de la tienda */
 .logo-img {
-    max-height: 60px; /* Ajusta la altura de tu logo según necesites */
+    height: 120px;
     width: auto;
+    /*max-height: 60px; Ajusta la altura de tu logo según necesites */
     display: block;
+    object-fit: contain;
 }
 
 /* Contenedor del buscador */
