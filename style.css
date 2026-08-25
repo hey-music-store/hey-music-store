@@ -414,9 +414,9 @@ header {
     border-color: #a1a1aa;
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
 }
-/* $$$$$$$$$$$$$$$$$$$$$$$$ Adaptación para pantallas de celulares $$$$$$$$$$$$$$$$$$$$$$$$$
+/* $$$$$$$$$$$$$$$$$$$$$$$$ Adaptación para pantallas de celulares $$$$$$$$$$$$$$$$$$$$$$$$$ */
 @media (max-width: 768px) {
-    /* 1. Encabezado en columna centrada 
+    /* 1. Encabezado en columna centrada */
     .main-header {
         flex-direction: column;
         gap: 15px;
@@ -424,7 +424,7 @@ header {
         text-align: center;
     }
 
-    /* 2. Buscador a ancho completo 
+    /* 2. Buscador a ancho completo */
     .search-container {
         width: 100%;
         justify-content: center;
@@ -435,14 +435,14 @@ header {
         max-width: 220px;
     }
 
-    /* 3. Catálogo en 1 sola columna 
+    /* 3. Catálogo en 1 sola columna */
     .categories-grid, .catalog-grid {
         grid-template-columns: 2fr !important;
         gap: 15px;
         padding: 10px;
     }
 
-    /* 4. Tarjetas internas verticales 
+    /* 4. Tarjetas internas verticales */
     .cat-card {
         flex-direction: column;
         text-align: left;/*center
@@ -457,5 +457,5 @@ header {
 
     .card-details {
         align-items: center;
-    }*/
+    }
 }
