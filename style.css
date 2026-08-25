@@ -27,14 +27,22 @@ body {
     border-bottom: 1px solid #e0e0e0; /* Línea sutil divisora */
 }
 
-/* Imagen / Logo de la tienda */
+/* Imagen / Logo de la tienda 
 .logo-img {
     height: 120px;
     width: auto;
-    /*max-height: 60px; Ajusta la altura de tu logo según necesites */
+    /*max-height: 60px; Ajusta la altura de tu logo según necesites 
     display: block;
     object-fit: contain;
+}*/
+/* Aplica esto a la etiqueta <img> de tu logo */
+.logo-img {
+    display: block;
+    margin-left: 0;       /* Elimina el margen automático izquierdo */
+    margin-right: auto;    /* Empuja el resto del espacio a la derecha */
+    max-width: 120px;     /* Ajusta el tamaño según prefieras */
 }
+
 
 /* Contenedor del buscador */
 .search-container {
@@ -45,7 +53,7 @@ body {
 /* Campo de entrada de texto */
 .search-input {
     padding: 10px 15px;
-    font-size: 0.95rem;
+    font-size: 0.95rem; bn
     border: 1px solid #ccc;
     border-right: none; /* Une el input con el botón */
     border-radius: 4px 0 0 4px;
