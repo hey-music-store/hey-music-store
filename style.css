@@ -205,7 +205,7 @@ header {
 /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Contenedor principal de la caja de búsqueda */
 .search-box {
-    position: center;
+    position: relative;
     display: flex;
     align-items: center;
     width: 100%;
@@ -214,7 +214,7 @@ header {
 
 /* Contenedor principal con posicionamiento relativo */
 .search-box {
-    position: center;
+    position: relative;
     display: flex;
     align-items: center;
     width: 100%;
