@@ -409,7 +409,7 @@ header {
         flex-direction: column;
         gap: 15px;
         padding: 15px;
-        text-align: left;
+        text-align: center;
     }
 
     /* 2. Buscador a ancho completo */
@@ -425,7 +425,7 @@ header {
 
     /* 3. Catálogo en 1 sola columna */
     .categories-grid, .catalog-grid {
-        grid-template-columns: 1fr !important;
+        grid-template-columns: 2fr !important;
         gap: 15px;
         padding: 10px;
     }
