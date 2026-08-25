@@ -40,7 +40,7 @@ body {
     display: block;
     margin-left: 0;       /* Elimina el margen automático izquierdo */
     margin-right: auto;    /* Empuja el resto del espacio a la derecha */
-    max-width: 120px;     /* Ajusta el tamaño según prefieras */
+    max-width: 70px;     /* Ajusta el tamaño según prefieras */
 }
 
 
@@ -164,8 +164,8 @@ header {
 }
 /*=========================== Tamaño de las imagenes del catálogo ========================*/
 .cat-card img {
-    width: 250px;
-    height: 250px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
 }
 
