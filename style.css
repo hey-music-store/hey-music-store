@@ -202,6 +202,7 @@ header {
     left: 20px;
     z-index: 1000;
   }
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Contenedor principal de la caja de búsqueda */
 .search-box {
     position: relative;
@@ -211,6 +212,44 @@ header {
     max-width: 380px; /* Ancho ajustable según el diseño */
 }
 
+/* Contenedor principal con posicionamiento relativo */
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Icono de la lupa dentro del campo */
+.search-icon {
+    position: absolute;
+    left: 14px;
+    width: 18px;
+    height: 18px;
+    color: #666666;
+    pointer-events: none; /* Permite escribir aunque se haga clic sobre la lupa */
+}
+
+/* Campo de entrada */
+.search-box input {
+    width: 100%;
+    padding: 11px 16px 11px 42px; /* Margen a la izquierda para no solapar el texto con la lupa */
+    font-size: 0.95rem;
+    color: #222222;
+    background-color: #f2f2f3;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+/* Cambio de color al hacer clic/escribir */
+.search-box input:focus {
+    background-color: #ffffff;
+    border-color: #999999;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}   /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 /* Icono de lupa posicionado adentro a la izquierda */
 .search-icon {
     position: absolute;
