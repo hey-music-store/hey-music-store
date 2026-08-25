@@ -7,3 +7,4 @@ function agregarAlCarrito(nombreProducto) {
         notificacion.classList.add('oculta');
     }, 3000);
 }
+document.title="Hey Music Store";
