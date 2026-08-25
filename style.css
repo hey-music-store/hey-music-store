@@ -86,7 +86,11 @@ header {
     text-align: center;
     margin-bottom: 20px;
 }
-
+/* Forzar alinear el logo a la izquierda */
+.header-top {
+    text-align: left; /* Cambia text-align: center por left */
+    padding-left: 15px; /* Agrega un pequeño margen para que no pegue al borde */
+}
 
 /* ==================== 5. SECCIÓN DE CATALOGO ==================== */
 .main-content {
