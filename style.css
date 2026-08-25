@@ -30,7 +30,7 @@ body {
 /* Imagen / Logo de la tienda */
 .logo-img {
     height: 120px;
-    width: left;/*auto*/
+    width: auto;
     /*max-height: 60px; Ajusta la altura de tu logo según necesites */
     display: block;
     object-fit: contain;
@@ -39,7 +39,7 @@ body {
 /* Contenedor del buscador */
 .search-container {
     display: flex;
-    align-items: right;/*center*/
+    align-items: center;
 }
 
 /* Campo de entrada de texto */
