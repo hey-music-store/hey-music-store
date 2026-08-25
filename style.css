@@ -53,7 +53,7 @@ body {
 /* Campo de entrada de texto */
 .search-input {
     padding: 10px 15px;
-    font-size: 0.95rem; bn
+    font-size: 0.95rem;
     border: 1px solid #ccc;
     border-right: none; /* Une el input con el botón */
     border-radius: 4px 0 0 4px;
@@ -151,7 +151,7 @@ header {
     display: flex;
     flex-direction: column; /*aplica el titulo uno sobre otro*/
     gap: 8px;               /*espacio uniforme entre cada texto*/
-    text-align: left;       /*alinea los textos a la izqierda*/
+    text-align: center;       /*alinea los textos a la izqierda*/
 }
 .card-details h3 {
     font-size: 18px;
