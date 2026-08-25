@@ -409,7 +409,7 @@ header {
         flex-direction: column;
         gap: 15px;
         padding: 15px;
-        text-align: center;
+        text-align: left;
     }
 
     /* 2. Buscador a ancho completo */
