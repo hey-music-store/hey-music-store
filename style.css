@@ -274,7 +274,7 @@ header {
 .floating-cart {
     position: fixed;
     bottom: 25px;
-    right: 20px;
+    right: 10px;
     width: 60px;
     height: 60px;
     background-color: #25d366; /* Verde WhatsApp */
@@ -314,7 +314,7 @@ header {
 /* Contenedor principal alineado abajo a la derecha */
 .cart-container-floating {
     position: fixed;
-    bottom: 520px;
+    bottom: 480px;
     right: 25px;
     display: flex;
     flex-direction: column;
