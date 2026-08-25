@@ -202,6 +202,43 @@ header {
     left: 20px;
     z-index: 1000;
   }
+/* Contenedor principal de la caja de búsqueda */
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 380px; /* Ancho ajustable según el diseño */
+}
+
+/* Icono de lupa posicionado adentro a la izquierda */
+.search-icon {
+    position: absolute;
+    left: 14px;
+    color: #888888;
+    font-size: 0.95rem;
+    pointer-events: none; /* Permite hacer clic en el input aunque se toque la lupa */
+}
+
+/* Campo de entrada estilizado */
+.search-box input {
+    width: 100%;
+    padding: 10px 16px 10px 40px; /* Indentación izquierda para dejar espacio a la lupa */
+    font-size: 0.95rem;
+    color: #333333;
+    background-color: #f4f4f5; /* Fondo gris claro suave */
+    border: 1px solid #e4e4e7;
+    border-radius: 8px; /* Bordes redondeados modernos */
+    outline: none;
+    transition: all 0.2s ease;
+}
+
+/* Efecto al seleccionar o enfocar la barra */
+.search-box input:focus {
+    background-color: #ffffff;
+    border-color: #a1a1aa;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
+}
 /* $$$$$$$$$$$$$$$$$$$$$$$$ Adaptación para pantallas de celulares $$$$$$$$$$$$$$$$$$$$$$$$$*/
 @media (max-width: 768px) {
     /* 1. Encabezado en columna centrada */
