@@ -23,7 +23,7 @@ body {
     justify-content: space-between; /* Logo a la izquierda, buscador a la derecha */
     align-items: center;            /* Centrados verticalmente */
     padding: 20px 40px;
-    background-color: transparent;
+    background-color: #ffffff;
     border-bottom: 1px solid #e0e0e0; /* Línea sutil divisora */
 }
 
@@ -111,7 +111,7 @@ header {
     align-items: left;
     text-align: left;
     gap: 20px;
-    background-color: transparent;
+    background-color: #ffffff;
     padding: 15px;
     border-radius: 8px;
 }
