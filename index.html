@@ -28,7 +28,7 @@
       <div class="cat-card">
         <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02223-78.jpg?raw=true" alt="Guitar">
         <div class="card-details">
-          <h3>Super Slinky Nickel Wound</h3>
+          <h3 class="product-title">Super Slinky Nickel Wound</h3>
           <p>Guitarra Eléctrica – Eb-P02223</p>          
           <p>Precio: Bs. 115</p>
           <button class="btn-cart" onclick="addToCart('Super Slinky', 115)">Añadir al carrito</button>                            
@@ -37,7 +37,7 @@
       <div class="cat-card">
         <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02222-78.jpg?raw=true" alt="Guitar">
         <div class="card-details">
-          <h3>Hibrid Slinky Nikel Wound</h3>
+          <h3 class="product-title">Hibrid Slinky Nikel Wound</h3>
           <p>Guitarra Eléctrica – Eb-P02222</p>          
           <p>Precio: Bs. 115</p>
           <button class="btn-cart" onclick="addToCart('Hibrid Slinky', 115)">Añadir al carrito</button>
@@ -46,7 +46,7 @@
       <div class="cat-card">
         <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02221-78.jpg?raw=true" alt="Guitar">
         <div class="card-details">
-          <h3>Regular Slinky Nickel Wound</h3> 
+          <h3 class="product-title">Regular Slinky Nickel Wound</h3> 
           <p>Guitarra Eléctrica – Eb-P02221</p>          
           <p>Precio: Bs. 115</p>
           <button class="btn-cart" onclick="addToCart('Regular Slinky', 115)">Añadir al carrito</button>
@@ -55,7 +55,7 @@
       <div class="cat-card">
         <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02403-95.jpg?raw=true" alt="Guitar">
         <div class="card-details">
-          <h3>Guitarra Clásica Ernesto Palla</h3>
+          <h3 class="product-title">Guitarra Clásica Ernesto Palla</h3>
           <p>Clear & Silver Nylon – Eb-P02403</p>          
           <p>Precio: Bs. 150</p>
           <button class="btn-cart" onclick="addToCart('Clasic Nylon', 150)">Añadir al carrito</button>
@@ -64,7 +64,7 @@
       <div class="cat-card">
         <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/Ernesto%20Palla.png?raw=true" alt="Guitar">
         <div class="card-details">
-          <h3>Earthwood Extra Light 80/20 Bronze</h3>
+          <h3 class="product-title">Earthwood Extra Light 80/20 Bronze</h3>
           <p>Guitarra Acústica – Eb-P02006</p>          
           <p>Precio: Bs. 120</p>
           <button class="btn-cart" onclick="addToCart('Acustic Metalic', 120)">Añadir al carrito</button>
@@ -73,7 +73,7 @@
       <div class="cat-card">
         <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02832-210.jpg?raw=true">
         <div class="card-details">
-          <h3>Regular Slinky Nickel Wound</h3>
+          <h3 class="product-title">Regular Slinky Nickel Wound</h3>
           <p>Bajo Eléctrico – Eb-P02832</p>
           <p>Precio: Bs. 390</p>
           <button class="btn-cart" onclick="addToCart('Regular Slinky Bass', 390)">Añadir al carrito</button>
@@ -82,7 +82,7 @@
       <div class="cat-card">
         <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02824-288.jpg?raw=true">
         <div class="card-details">  
-          <h3>Super Slinky 5-Cuerdas Nickel</h3>
+          <h3 class="product-title">Super Slinky 5 - Cuerdas Nickel</h3>
           <p>Wound Bajo Eléctrico – Eb-P02824</p>
           <p>Precio: Bs. 450</p>
           <button class="btn-cart" onclick="addToCart('Super Slinky Bass 5', 450)">Añadir al carrito</button>
@@ -91,7 +91,7 @@
       <div class="cat-card">
         <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02836-288.jpg?raw=true">
         <div class="card-details">          
-          <h3>Regular Slinky 5-Cuerdas Nickel</h3> 
+          <h3 class="product-title">Regular Slinky 5 - Cuerdas Nickel</h3> 
           <p>Wound Bajo Eléctrico – Eb-P02836</p>
           <p>Precio: Bs. 450</p>
           <button class="btn-cart" onclick="addToCart('Regular Slinky Bass 5', 450)">Añadir al carrito</button>
@@ -100,7 +100,7 @@
       <div class="cat-card">
         <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02838-318.jpg?raw=true">
         <div class="card-details">          
-          <h3>Slinky Long Scale 6-Cuerdas Nickel</h3> 
+          <h3 class="product-title">Slinky Long Scale 6 - Cuerdas Nickel</h3> 
           <p>Wound Bajo Eléctrico – Eb-P02838</p>
           <p>Precio: Bs. 470</p>
           <button class="btn-cart" onclick="addToCart('Slinky Bass 6 String', 470)">Añadir al carrito</button>
@@ -108,6 +108,9 @@
       </div>
     </div>
 </main>
+<p id="noResults" style="display: none; text-align: center; margin-top: 20px; color: #666;">
+    No se encontraron productos que coincidan con tu búsqueda.
+</p>
 <!-- Script Cesta de compras flotante desde acá -->
 <!-- Contenedor general del carrito flotante -->
 <div class="cart-container-floating" onclick="sendToWhatsApp()">
@@ -145,6 +148,28 @@ function sendToWhatsApp() {
 
     const phoneNumber = "59179171901";
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(fullMessage)}`, '_blank');
+}
+function filterProducts() {
+    const searchInput = document.getElementById('searchInput').value.toLowerCase().trim();
+    const cards = document.querySelectorAll('.cat-card');
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+        const cardText = card.innerText.toLowerCase();
+
+        if (cardText.includes(searchInput)) {
+            card.style.display = "";
+            visibleCount++;
+        } else {
+            card.style.display = "none";
+        }
+    });
+
+    // Mostrar u ocultar el mensaje de "sin resultados"
+    const noResultsMsg = document.getElementById('noResults');
+    if (noResultsMsg) {
+        noResultsMsg.style.display = visibleCount === 0 ? "block" : "none";
+    }
 }
 </script>
 </body>
