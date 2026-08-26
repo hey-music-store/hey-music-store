@@ -360,7 +360,7 @@ header {
     position: absolute;
     top: -2px;
     right: -2px;
-    background-color: #ff3b30;
+    background-color: #E0F2FE;/*#ff3b30;*/
     color: white;
     font-size: 0.8rem;
     font-weight: bold;
@@ -424,7 +424,7 @@ header {
         text-align: center;
     }
     html, body {
-        background-color: white;
+        background-color: #ffffff;
         margin: 0;
         padding: 0;
     }
