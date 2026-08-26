@@ -456,7 +456,7 @@ header {
     }
 
     .cat-card img {
-        max-width: 450px; /* Tamaño de cada imagen del catalogo */
+        max-width: 50px; /* Tamaño de cada imagen del catalogo */
         height: auto;
     }
 
