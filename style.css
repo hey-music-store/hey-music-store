@@ -457,7 +457,7 @@ header {
         flex-direction: column;
         text-align: center;
         width: 100%;
-        box-sizing: border-box;
+        box-sizing: none;
     }
 
     .cat-card img {
