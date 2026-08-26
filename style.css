@@ -432,7 +432,7 @@ header {
     /* Forzar alinear el logo a la izquierda */
     .header-top {
         text-align: left; /* Cambia text-align: center por left */
-        padding-left: 15px; /* Agrega un pequeño margen para que no pegue al borde */
+        padding-left: 5px; /* Agrega un pequeño margen para que no pegue al borde */
     }
     /* 2. Buscador a ancho completo */
     .search-container {
