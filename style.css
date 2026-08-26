@@ -424,9 +424,9 @@ header {
         text-align: center;
     }
     .logo-img {
-        display: block;
+        display: left;/*block*/
         margin-left: 0;       /* Elimina el margen automático izquierdo */
-        margin-right: 0;/*auto Empuja el resto del espacio a la derecha */
+        margin-right: auto;/*auto Empuja el resto del espacio a la derecha */
         max-width: 100px;     /* Ajusta el tamaño según prefieras */
     }
     /* 2. Buscador a ancho completo */
