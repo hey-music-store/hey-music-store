@@ -12,7 +12,27 @@
       <!-- Logo o imagen de la tienda -->
       <!--div class="logo-container"-->
         <img src="logo.png" alt="Hey Music Store" class="logo-img">
-      
+      <!-- Boton Menu -->
+      <header>
+  <nav class="navbar">
+    <div class="logo">Mi Web</div>
+    
+    <!-- Botón de 3 rayas -->
+    <button class="menu-toggle" id="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- El menú que se esconde -->
+    <ul class="menu" id="menu">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
       <!-- Barra de búsqueda alineada a la derecha -->
 <div class="search-box">    
     <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -172,6 +192,15 @@ function filterProducts() {
         noResultsMsg.style.display = visibleCount === 0 ? "block" : "none";
     }
 }
+</script>
+<!-- Boton Menu -->
+<script>
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.getElementById('menu');
+  menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('active');
+    menuToggle.classList.toggle('active'); // para la animación X
+  });
 </script>
 </body>
 </html>
