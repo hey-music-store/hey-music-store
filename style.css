@@ -398,7 +398,7 @@ header {
 /* Contenedor principal alineado abajo a la derecha */
 .cart-container-floating {
     position: fixed;
-    bottom: 400px;
+    bottom: 300px;
     right: 25px;
     display: flex;
     flex-direction: column;
