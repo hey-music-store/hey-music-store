@@ -39,7 +39,7 @@ body {
 .logo-img {
     display: block;
     margin-left: 0;       /* Elimina el margen automático izquierdo */
-    margin-right: 0;/*auto Empuja el resto del espacio a la derecha */
+    margin-right: auto;/* Empuja el resto del espacio a la derecha */
     max-width: 70px;     /* Ajusta el tamaño según prefieras */
 }
 
@@ -164,8 +164,8 @@ header {
 }
 /*=========================== Tamaño de las imagenes del catálogo ========================*/
 .cat-card img {
-    width: 50px;
-    height: 50px;
+    width: 250px;
+    height: 250px;
     object-fit: cover;
 }
 
@@ -423,7 +423,12 @@ header {
         padding: 15px;
         text-align: center;
     }
-
+    .logo-img {
+        display: block;
+        margin-left: 0;       /* Elimina el margen automático izquierdo */
+        margin-right: 0;/*auto Empuja el resto del espacio a la derecha */
+        max-width: 40px;     /* Ajusta el tamaño según prefieras */
+    }
     /* 2. Buscador a ancho completo */
     .search-container {
         width: 100%;
@@ -445,13 +450,13 @@ header {
     /* 4. Tarjetas internas verticales */
     .cat-card {
         flex-direction: column;
-        text-align: left;/*center
+        text-align: center;
         width: 100%;
         box-sizing: border-box;
     }
 
     .cat-card img {
-        max-width: 30px;
+        max-width: 450px; /* Tamaño de cada imagen del catalogo */
         height: auto;
     }
 
