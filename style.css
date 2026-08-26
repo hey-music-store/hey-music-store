@@ -16,6 +16,69 @@ body {
     color: #333;
     padding: 20px;
 }
+/* %%%%%%%%%% Boton Menú %%%%%%%%%%%% */
+/* Barra superior */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  padding: 15px 20px;
+  color: white;
+}
+
+/* El menú normal en PC */
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+/* El botón hamburguesa - escondido en PC */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Las 3 rayas */
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: 0.3s;
+}
+
+/* RESPONSIVE: Para celular */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: flex; /* Ahora sí se ve el botón */
+  }
+
+  .menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #333;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    display: none; /* Escondido por defecto */
+  }
+
+  .menu.active {
+    display: flex; /* Cuando le das click aparece */
+  }
+}.   /*.  %%%%%%%%% hasta acá en boton menú */
 /*  &&&&&&&&&&&&&&&&&&&&&&&&&&&  Desde acá es el encabezado &&&&&&&&&&&&&&&&&&*/
 /* Encabezado principal */
 .main-header {
