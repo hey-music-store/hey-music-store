@@ -427,7 +427,12 @@ header {
         display: left;/*block*/
         margin-left: 0;       /* Elimina el margen automático izquierdo */
         margin-right: auto;/*auto Empuja el resto del espacio a la derecha */
-        max-width: 100px;     /* Ajusta el tamaño según prefieras */
+        max-width: 300px;     /* Ajusta el tamaño según prefieras */
+    }
+    /* Forzar alinear el logo a la izquierda */
+    .header-top {
+        text-align: left; /* Cambia text-align: center por left */
+        padding-left: 15px; /* Agrega un pequeño margen para que no pegue al borde */
     }
     /* 2. Buscador a ancho completo */
     .search-container {
