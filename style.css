@@ -39,7 +39,7 @@ body {
 .logo-img {
     display: block;
     margin-left: 0;       /* Elimina el margen automático izquierdo */
-    margin-right: auto;    /* Empuja el resto del espacio a la derecha */
+    margin-right: 0;/*auto Empuja el resto del espacio a la derecha */
     max-width: 70px;     /* Ajusta el tamaño según prefieras */
 }
 
