@@ -17,7 +17,7 @@ body {
     padding: 20px;
 }
 /* %%%%%%%%%% Boton Menú %%%%%%%%%%%% */
-/* Barra superior */
+/* Barra superior de Menú*/
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -57,7 +57,7 @@ body {
   transition: 0.3s;
 }
 
-/* RESPONSIVE: Para celular */
+/* Barra de Menú desplazada hacia abajo Para celular */
 @media (max-width: 768px) {
   .menu-toggle {
     display: flex; /* Ahora sí se ve el botón */
@@ -68,7 +68,7 @@ body {
     top: 60px;
     left: 0;
     width: 100%;
-    background: #00ff00;/*Verde brillante*/
+    background: #d5d5d5;/*Gris claro*/
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
@@ -88,6 +88,7 @@ body {
   transform: rotate(-45deg) translate(5px, -5px);
 }
 }.   /*.  %%%%%%%%% hasta acá en boton menú */
+
 /*  &&&&&&&&&&&&&&&&&&&&&&&&&&&  Desde acá es el encabezado &&&&&&&&&&&&&&&&&&*/
 /* Encabezado principal */
 .main-header {
@@ -107,7 +108,7 @@ body {
     display: block;
     object-fit: contain;
 }*/
-/* Aplica esto a la etiqueta <img> de tu logo */
+/* Logo */
 .logo-img {
     display: block;
     margin-left: 0;       /* Elimina el margen automático izquierdo */
@@ -137,18 +138,18 @@ body {
     border-color: #222;
 }
 
-/* Botón BUSCAR elegante en negro */
+/* Botón BUSCAR elegante en negro 
 .search-btn {
     padding: 10px 20px;
     font-size: 0.9rem;
     font-weight: bold;
     color: #ffffff;
-    background-color: #111111; /* Color oscuro como el de la imagen */
+    background-color: #111111; /* Color oscuro como el de la imagen
     border: 1px solid #111111;
     border-radius: 0 4px 4px 0;
     cursor: pointer;
     transition: background-color 0.2s ease;
-}
+}*/
 
 .search-btn:hover {
     background-color: #333333;
