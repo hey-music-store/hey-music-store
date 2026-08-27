@@ -176,17 +176,17 @@ header {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-/* Color del Boton Añadir al carrito: Imagen a la izquierda, detalles a la derecha */
+/* Color del Boton Añadir al carrito: Imagen a la izquierda, detalles a la derecha 
 .cat-card {
     display: flex;
     flex-direction: flex;
     align-items: left;
     text-align: left;
     gap: 20px;
-    background-color: #d3d3d3;/*Gris claro*/
+    background-color: #d3d3d3;/*Gris claro
     padding: 15px;
     border-radius: 8px;
-}
+}*/
 
 /* Contenedor de texto: Apila las líneas una sobre otra */
 .card-details {
@@ -339,8 +339,8 @@ header {
 .btn-cart {
     margin-top: 8px;
     padding: 10px 18px;
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #d3d3d3;/*Gris claro*/
+    color: #0000ff;/*Azul*/
     font-size: 0.95rem;
     font-weight: bold;
     border: none;
