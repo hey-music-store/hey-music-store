@@ -35,7 +35,7 @@ body {
 }
 
 .menu a {
-  color: white;
+  color: #0000ff;/*wite*/
   text-decoration: none;
 }
 
@@ -53,7 +53,7 @@ body {
 .menu-toggle span {
   width: 25px;
   height: 3px;
-  background: white;
+  background: #ffffff;/*wite*/
   transition: 0.3s;
 }
 
@@ -72,7 +72,7 @@ body {
     /*top: 60px;*/
     left: 0;
     width: 100%;
-    background: #d5d5d5;/*Gris claro*/
+    background: #d3d3d3;/*Gris claro*/
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
