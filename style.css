@@ -24,7 +24,7 @@ body {
   align-items: relative;/*center*/
   background: #d3d3d3;/*color de fondo de menú desplazado*/
   padding: 15px 20px;
-  color: #0000ff;/*white*/
+  color: #999999;/*color de letra menú*/
 }
 
 /* El menú normal en PC */
