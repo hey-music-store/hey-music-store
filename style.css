@@ -59,12 +59,13 @@ body {
 
 /* Barra de Menú desplazada hacia abajo Para celular */
  @media (max-width: 768px) {
-  /*.menu-toggle {
-    display: flex; /* Ahora sí se ve el botón */
-    .navbar {
-        flex-wrap: wrap; /* Permite que el menú desplegable baje a la siguiente fila */
+     .menu-toggle {
+       display: flex; /* Ahora sí se ve el botón */
      }
  }
+  .navbar {
+        flex-wrap: wrap; /* Permite que el menú desplegable baje a la siguiente fila */
+  }
 
   .menu {
     position: relative;
