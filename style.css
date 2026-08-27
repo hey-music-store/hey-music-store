@@ -22,9 +22,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: relative;/*center*/
-  background: #0000ff;/*color gris claro*/
+  background: #d3d3d3;/*color de fondo de menú desplazado*/
   padding: 15px 20px;
-  color: #d3d3d3;/*white*/
+  color: #0000ff;/*white*/
 }
 
 /* El menú normal en PC */
