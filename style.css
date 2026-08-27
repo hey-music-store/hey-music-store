@@ -176,14 +176,14 @@ header {
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
-/* Tarjeta principal: Imagen a la izquierda, detalles a la derecha */
+/* Color del Boton Añadir al carrito: Imagen a la izquierda, detalles a la derecha */
 .cat-card {
     display: flex;
     flex-direction: flex;
     align-items: left;
     text-align: left;
     gap: 20px;
-    background-color: #d3d3d3;
+    background-color: #d3d3d3;/*Gris claro*/
     padding: 15px;
     border-radius: 8px;
 }
