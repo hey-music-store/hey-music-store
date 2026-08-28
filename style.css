@@ -207,8 +207,8 @@ header {
 }
 /*=== Tamaño de las imagenes del catálogo ========================*/
 .cat-card img {
-    width:320px;
-    height: 320px;
+    width:340px;
+    height: 340px;
     object-fit: cover;
 }
 
