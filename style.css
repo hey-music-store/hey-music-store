@@ -35,7 +35,7 @@ body {
 }
 /* Color de texto del menú desplazado*/
 .menu a {
-  color: #333333;/*wite*/
+  color: #333333;/*white*/
   text-decoration: none;
 }
 
@@ -163,7 +163,7 @@ header {
 .card-details {
     display: flex;
     flex-direction: column;
-    gap: 6px; /* Espacio vertical entre el título y las líneas */
+    gap: 4px; /*6px Espacio vertical entre el título y las líneas */
     text-align: center;
 }
 
