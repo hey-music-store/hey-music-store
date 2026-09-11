@@ -103,13 +103,6 @@ body {
     background-color: #ffffff;
     border-bottom: 1px solid #e0e0e0; /* Línea sutil divisora */
 }
-/* Logo */
-.logo-img {
-    display: block;
-    margin-left: 0;       /* Elimina el margen automático izquierdo */
-    margin-right: auto;/* Empuja el resto del espacio a la derecha */
-    max-width: 70px;     /* Ajusta el tamaño según prefieras */
-}
 
 /* Contenedor del buscador */
 .search-container {
@@ -217,15 +210,25 @@ header {
 /*=== Tamaño de las imagenes del catálogo ========================*/
 .cat-card img {
     width:350px;
-    height: 100px;
+    height: 350px;
     object-fit: cover;
 }
 /*=== Tamaño de las imagenes del catálogo ========================*/
-/*.marcas img {
-    width:350px;
+.ernie img {
+    width: 30px;
     height: 100px;
     object-fit: cover;
-}*/
+}
+.orange img {
+    width: 40px;
+    height: 100px;
+    object-fit: cover;
+}
+.frogbro img {
+    width: 40px;
+    height: 100px;
+    object-fit: cover;
+}
 
 /*=========================== tamaño de texto de tedalles de articulos ==================*/
 .cat-card span {
