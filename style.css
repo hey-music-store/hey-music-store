@@ -190,6 +190,15 @@ header {
   padding: 10px;
   cursor: pointer;
 }
+.marcas {
+  display: flex;
+  flex-items: row;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  cursor: pointer;
+}
 .card-details {
     display: flex;
     flex-direction: column; /*aplica el titulo uno sobre otro*/
@@ -211,6 +220,12 @@ header {
     height: 100px;
     object-fit: cover;
 }
+/*=== Tamaño de las imagenes del catálogo ========================*/
+/*.marcas img {
+    width:350px;
+    height: 100px;
+    object-fit: cover;
+}*/
 
 /*=========================== tamaño de texto de tedalles de articulos ==================*/
 .cat-card span {
@@ -495,10 +510,47 @@ header {
     align-items: center;
     text-align: center;            /* Centra todo el contenido */
 }
-
+  .ernie {
+    background-color: transparent; /* Quita el fondo blanco con sombra */
+    border: none;                  /* Quita cualquier borde */
+    border-radius: 0;
+    box-shadow: none;              /* Quita la sombra de la tarjeta */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;            /* Centra todo el contenido */
+}
+ .orange {
+    background-color: transparent; /* Quita el fondo blanco con sombra */
+    border: none;                  /* Quita cualquier borde */
+    border-radius: 0;
+    box-shadow: none;              /* Quita la sombra de la tarjeta */
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;            /* Centra todo el contenido */
+}
 /* Imagen del producto sobre fondo limpio */
 .cat-card img {
     max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+  /* Imagen de marcas */
+.ernie img {
+    max-width: 30%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px;
+    background-color: transparent;
+}
+    /* Imagen de marcas */
+.orange img {
+    max-width: 40%;
     height: auto;
     object-fit: contain;
     margin-bottom: 15px;
@@ -514,7 +566,7 @@ header {
     margin: 8px 0;
     line-height: 1.3;
 }
-
+  
 /* Etiqueta de Oferta (Opcional, si la usas) */
 .badge-offer {
     display: inline-block;
