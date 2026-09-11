@@ -215,7 +215,7 @@ header {
 }
 /*=== Tamaño de las marcas ========================*/
 .ernie img {
-    width: 80px;
+    width: 100px;
     height: 100px;
     object-fit: cover;
 }
