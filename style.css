@@ -1,72 +1,54 @@
 html, body {
     background-color: #ffffff;
     margin: 0;
-    padding: 0;
-}
-/* ==================== RESET Y CONFIGURACIÓN BÁSICA ==================== */
-* {
+    padding: 0;}
+    /* ============= RESET Y CONFIGURACIÓN BÁSICA =============== */
+  * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
-}
-
-body {
+    padding: 0;}
+  body {
     font-family: Arial, sans-serif;
     background-color: #ffffff;
     color: #333;
-    padding: 20px;
-}
-/* %%%%%%%%%% Boton Menú %%%%%%%%%%%% */
-/* Barra superior de Menú*/
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: relative;/*center*/
-  background: #EFEFEF;/*color de fondo de menú desplazado*/
-  padding: 15px 20px;
-  color: #555555;/*color de letra menú*/
-}
-
-/* El menú normal en PC */
-.menu {
-  display: flex;
-  list-style: none;
-  gap: 20px;
-}
-/* Color de texto del menú desplazado*/
-.menu a {
-  color: #333333;/*white*/
-  text-decoration: none;
-}
-
-/* El botón hamburguesa - escondido en PC */
-.menu-toggle {
-  display: none;
-  flex-direction: column;
-  gap: 5px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* Las 3 rayas */
-.menu-toggle span {
-  width: 25px;
-  height: 3px;
-  background: #555555;/*wite*/
-  transition: 0.3s;
-}
-
-/* Barra de Menú desplazada hacia abajo Para celular */
- @media (max-width: 768px) {
-     .menu-toggle {
-       display: flex; /* Ahora sí se ve el botón */
-     }
- }
+    padding: 20px;}
+    /* %%%%% Boton Menú, Barra superior de Menú%%%%% */
   .navbar {
-        flex-wrap: wrap; /* Permite que el menú desplegable baje a la siguiente fila */
-  }
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;/*center*/
+    background: #EFEFEF;/*color de fondo de menú desplazado*/
+    padding: 15px 20px;
+    color: #555555;/*color de letra menú*/}
+    /* El menú normal en PC */
+  .menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;}
+    /* Color de texto del menú desplazado*/
+  .menu a {
+    color: #333333;/*white*/
+    text-decoration: none;}
+    /* El botón hamburguesa - escondido en PC */
+  .menu-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;}
+    /* Las 3 rayas */
+  .menu-toggle span {
+    width: 25px;
+    height: 3px;
+    background: #555555;/*wite*/
+    transition: 0.3s;}
+    /* Barra de Menú desplazada hacia abajo Para celular */
+  @media (max-width: 768px) {
+  .menu-toggle {
+     display: flex; /* Ahora sí se ve el botón */}}
+  .navbar {
+     flex-wrap: wrap;/*Permite menú desplegable baje a la siguiente fila*/}
   .menu {
     position: relative;
     /*top: 60px;*/
@@ -76,254 +58,170 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
-    display: none; /* Escondido por defecto */
-  }
+    display: none; /* Escondido por defecto */}
   .menu.active {
-    display: flex; /* Cuando le das click aparece */
-  }
+    display: flex; /* Cuando le das click aparece */}
   .menu-toggle.active span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-.menu-toggle.active span:nth-child(2) {
-  opacity: 0;
-}
-.menu-toggle.active span:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-}
-}.   /*.  %%%%%%%%% hasta acá en boton menú */
-
-/*  &&&&&&&&&&&&&&&&&&&&&&&&&&&  Desde acá es el encabezado &&&&&&&&&&&&&&&&&&*/
-/* Encabezado principal */
-.main-header {
+    transform: rotate(45deg) translate(5px, 5px);}
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;}
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);}/*hasta acá boton menú*/
+    /*  &&&&&&&&  Desde acá es el encabezado &&&&&&&&&&*/
+    /* Encabezado principal */
+  .main-header {
     display: flex;
-    justify-content: space-between; /* Logo a la izquierda, buscador a la derecha */
+    justify-content: space-between;/*Logo a la izquierda, luspa a derecha */
     align-items: center;            /* Centrados verticalmente */
     padding: 20px 40px;
     background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0; /* Línea sutil divisora */
-}
-
-/* Contenedor del buscador */
-.search-container {
+    border-bottom: 1px solid #e0e0e0; /* Línea sutil divisora */}
+    /* Contenedor del buscador */
+  .search-container {
     display: flex;
-    align-items: center;
-}
-
-/* Campo de entrada de texto */
-.search-input {
+    align-items: center;}
+    /* Campo de entrada de texto */
+  .search-input {
     padding: 10px 15px;
     font-size: 0.95rem;
     border: 1px solid #ccc;
     border-right: none; /* Une el input con el botón */
     border-radius: 4px 0 0 4px;
     outline: none;
-    width: 280px; /* Ancho de la caja de búsqueda */
-}
-
-.search-input:focus {
-    border-color: #222;
-}
-
-.search-btn:hover {
-    background-color: #0000ff;/*333333*/
-}     /*  &&&&&&&&&&&&&&&&&&&&&&&&&&&  Hasta acá es el encabezado &&&&&&&&&&&&&&&&&&*/
-
-header {
+    width: 280px; /* Ancho de la caja de búsqueda */}
+  .search-input:focus {
+    border-color: #222;}
+  .search-btn:hover {
+    background-color: #0000ff;/*333333*/}
+    /*&&&&&&&&&  Hasta acá es el encabezado &&&&&&&&&*/
+  header {
     text-align: center;
-    margin-bottom: 20px;
-}
-/* Forzar alinear el logo a la izquierda */
-.header-top {
-    text-align: left; /* Cambia text-align: center por left */
-    padding-left: 15px; /* Agrega un pequeño margen para que no pegue al borde */
-}
-.pagination {
-  diplay: flex;
-  justify-content: center;
-  list-style-type: none;
-padding: 0;
-}
-.pagination li a {
-  padding: 5px 10px;
-  border: 1px solid gray;
-margin: 5px;
-border-radius: 5px;
-text-decoration: none;
-}
-.pagination li a.active {
-  background: green;
-}
-/* ==================== 5. SECCIÓN DE CATALOGO ==================== */
-.main-content {
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
-
-/*===================== Mostrar N colunas de imagenes de articulos ============*/
-.categories-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-/* Contenedor de texto: Apila las líneas una sobre otra */
-.card-details {
+    margin-bottom: 20px;}
+    /* ========= 5. SECCIÓN DE CATALOGO =========== */
+  .main-content {
+    margin-top: 30px;
+    margin-bottom: 50px;}
+    /*===== Mostrar N colunas de imagenes de articulos  =======*/
+  .categories-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;}
+    /* Contenedor de texto: Apila las líneas una sobre otra */
+  .card-details {
     display: flex;
     flex-direction: column;
     gap: 4px; /*6px Espacio vertical entre el título y las líneas */
-    text-align: center;
-}
-
-/* Estilo del título principal */
-.card-details h3 {
+    text-align: center;}
+    /* Estilo del título principal */
+  .card-details h3 {
     font-size: 1.2rem;
     font-weight: bold;
     color: #111111;
-    margin: 0;
-}
-
-/* Estilo de los textos secundarios */
-.card-details p {
+    margin: 0;}
+    /* Estilo de los textos secundarios */
+  .card-details p {
     font-size: 0.95rem;
     color: #444444;
-    margin: 0;
-}
-.cat-card {
-  display: flex;
-  flex-items: row;
-  align-items: center;
-  gap: 15px;
-  border: 1px solid #e5e5e5;
-  padding: 10px;
-  cursor: pointer;
-}
-.marcas {
-  display: flex;
-  flex-items: row;
-  align-items: center;
-  gap: 15px;
-  border: 1px solid #e5e5e5;
-  padding: 10px;
-  cursor: pointer;
-}
-.card-details {
+    margin: 0;}
+  .cat-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    cursor: pointer;}
+  .marcas {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    cursor: pointer;}
+  .card-details {
     display: flex;
     flex-direction: column; /*aplica el titulo uno sobre otro*/
     gap: 8px;               /*espacio uniforme entre cada texto*/
-    text-align: center;       /*alinea los textos a la izqierda*/
-}
-.card-details h3 {
+    text-align: center;       /*alinea los textos a la izqierda*/}
+  .card-details h3 {
     font-size: 18px;
     font-weight: bold;
-    color: #333;
-}
-.card-details p {
+    color: #333;}
+  .card-details p {
     font-size: 14px;
-    color: #666;
-}
-/*=== Tamaño de las imagenes del catálogo ========================*/
-.cat-card img {
+    color: #666;}
+    /*=== Tamaño de las imagenes del catálogo ========================*/
+  .cat-card img {
     width:350px;
     height: 350px;
-    object-fit: cover;
-}
-/*=== Tamaño de las marcas ========================*/
-.ernie img {
+    object-fit: cover;}
+    /*=== Tamaño de las marcas ========================*/
+  .ernie img {
     width: 100px;
     height: 100px;
-    object-fit: cover;
-}
-.orange img {
+    object-fit: cover;}
+  .orange img {
     width: 100px;
     height: 100px;
-    object-fit: cover;
-}
-.frogbro img {
+    object-fit: cover;}
+  .frogbro img {
     width: 100px;
     height: 100px;
-    object-fit: cover;
-}
-
-/*=========================== tamaño de texto de tedalles de articulos ==================*/
-.cat-card span {
-  font-size: 16px;
-  font-weight: bold;
-  color: #111111;
-}
-/*
-.btn-buy i {
-    font-size: 1.2rem; /* Tamaño del icono 
-}
-
-/* Efecto al pasar el cursor sobre el botón 
-.btn-buy:hover {
-    background-color: #1ebc57;
-    transform: translateY(-2px);
-}
-
-/* Efecto al hacer clic 
-.btn-buy:active {
-    transform: translateY(0);
-} /* %%%%%%%%%%%%%%%%%%%%%%%% El boton de comprar es hasta acá %%%%%%%%%%%%%%%%%%%%%%%%% */
-
-/* =========      Boton Whatasapp     ================*/
+    object-fit: cover;}
+    /*==== tamaño de texto de tedalles de articulos ========*/
+  .cat-card span {
+    font-size: 16px;
+    font-weight: bold;
+    color: #111111;}
+    /* =========Boton Whatasapp ============*/
   .whatsapp-bottom {
     position: fixed;
     bottom: 20px;
     left: 20px;
-    z-index: 1000;
-  }
-/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* Contenedor principal de la caja de búsqueda */
-.search-box {
+    z-index: 1000;}/* +++++++++++++++++++++++++++++++++++++++ */
+    /* Contenedor principal de la caja de búsqueda */
+  .search-box {
     position: relative;
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 380px; /* Ancho ajustable según el diseño */
-}
-
-/* Contenedor principal con posicionamiento relativo */
-.search-box {
+    max-width: 380px; /* Ancho ajustable según el diseño */}
+    /* Contenedor principal con posicionamiento relativo */
+  .search-box {
     position: relative;
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 400px;
-}
-
-/* Icono de la lupa dentro del campo */
-.search-icon {
+    max-width: 400px;}
+    /* Icono de la lupa dentro del campo */
+  .search-icon {
     position: absolute;
     left: 14px;
     width: 18px;
     height: 18px;
     color: #666666;
-    pointer-events: none; /* Permite escribir aunque se haga clic sobre la lupa */
-}
-
-/* Campo de entrada */
-.search-box input {
+    pointer-events: none;/*escribir aunque se haga clic sobre la lupa*/}
+    /* Campo de entrada */
+  .search-box input {
     width: 100%;
-    padding: 11px 16px 11px 42px; /* Margen a la izquierda para no solapar el texto con la lupa */
+    padding: 11px 16px 11px 42px;/*Margen izq para no solapar texto a lupa */
     font-size: 0.95rem;
     color: #222222;
     background-color: #f2f2f3;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
     outline: none;
-    transition: all 0.2s ease;
-}
-
-/* Cambio de color al hacer clic/escribir */
-.search-box input:focus {
+    transition: all 0.2s ease;}
+    /* Cambio de color al hacer clic/escribir */
+  .search-box input:focus {
     background-color: #ffffff;
     border-color: #999999;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}   /* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-/* ##################################################################### */
-/* Botón de Añadir al Carrito */
-.btn-cart {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);}   
+    /* +++++++++++++++++++++++++++++++++++++++++++++++++ */
+    /* ################################################# */
+    /* Botón de Añadir al Carrito */
+  .btn-cart {
     margin-top: 8px;
     padding: 10px 18px;
     background-color: #EFEFEF;/*Gris claro*/
@@ -333,18 +231,15 @@ text-decoration: none;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.1s ease;
-}
-/* codigo para cambiar el color presionar el boton agregar al carrito*/
-.btn-cart:hover {
+    transition: background-color 0.2s ease, transform 0.1s ease;}
+    /*cambiar el color presionar el boton agregar al carrito*/
+  .btn-cart:hover {
     background-color: #d5d5d5;
-    transform: translateY(-2px);
-}
-
-/* ??????????????????????????????????????????????????? Cesta Flotante ???????????????????????????????????????????????????????? */
-.floating-cart {
+    transform: translateY(-2px);}
+    /* ???????????? Cesta Flotante ????????????????????????????? */
+  .floating-cart {
     position: fixed;
-    bottom: 25px;
+    bottom: 20px;
     right: 5px;
     width: 60px;
     height: 60px;
@@ -357,33 +252,11 @@ text-decoration: none;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     z-index: 9999;
-    transition: transform 0.2s ease;
-}
-
-.floating-cart:hover {
-    transform: scale(1.08);
-}
-
-/* Contador flotante (Badge) */
-.cart-badge {
-    position: absolute;
-    top: -2px;
-    right: -2px;
-    background-color: #000000;/*#ff3b3b;*/
-    color: white;
-    font-size: 0.8rem;
-    font-weight: bold;
-    min-width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 2px solid #ffffff;
-}
-/* ----------------------------------------------------------- */
-/* Contenedor principal alineado abajo a la derecha */
-.cart-container-floating {
+    transition: transform 0.2s ease;}
+  .floating-cart:hover {
+    transform: scale(1.08);}
+    /* Contenedor principal alineado abajo a la derecha */
+  .cart-container-floating {
     position: fixed;
     bottom: 300px;
     right: 25px;
@@ -392,11 +265,9 @@ text-decoration: none;
     align-items: center;
     gap: 6px;
     cursor: pointer;
-    z-index: 9999;
-}
-
-/* Icono circular flotante */
-.floating-cart {
+    z-index: 9999;}
+    /* Icono circular flotante */
+  .floating-cart {
     position: relative;
     width: 60px;
     height: 60px;
@@ -407,15 +278,11 @@ text-decoration: none;
     align-items: center;
     justify-content: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-    transition: transform 0.2s ease;
-}
-
-.cart-container-floating:hover .floating-cart {
-    transform: scale(1.08);
-}
-
-/* Badge con la cantidad de items */
-.cart-badge {
+    transition: transform 0.2s ease;}
+  .cart-container-floating:hover .floating-cart {
+    transform: scale(1.08);}
+    /* Badge con la cantidad de items */
+  .cart-badge {
     position: absolute;
     top: -2px;
     right: -2px;
@@ -429,11 +296,9 @@ text-decoration: none;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid #ffffff;
-}
-
-/* Etiqueta del resumen total */
-.cart-total-label {
+    border: 2px solid #ffffff;}
+    /* Etiqueta del resumen total */
+  .cart-total-label {
     background-color: #111111;
     color: #ffffff;
     font-size: 0.85rem;
@@ -441,82 +306,80 @@ text-decoration: none;
     padding: 4px 10px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
-    white-space: nowrap;
-}
-/* ----------------------------------------------------------- */
-/* ##################################################################### */
-/* Icono de lupa posicionado adentro a la izquierda */
-.search-icon {
+    white-space: nowrap;}
+    /* -------------------------------------------- */
+    /* ############################################## */
+    /* Icono de lupa posicionado adentro a la izquierda */
+  .search-icon {
     position: absolute;
     left: 14px;
     color: #888888;
     font-size: 0.95rem;
-    pointer-events: none; /* Permite hacer clic en el input aunque se toque la lupa */
-}
-
-/* Campo de entrada estilizado */
-.search-box input {
+    pointer-events: none;/*hacer clic en el input aunque se toque lupa */}
+    /* Campo de entrada estilizado */
+  .search-box input {
     width: 100%;
-    padding: 10px 16px 10px 40px; /* Indentación izquierda para dejar espacio a la lupa */
+    padding: 10px 16px 10px 40px;/*Indentación izq para espacio a lupa*/
     font-size: 0.95rem;
     color: #333333;
     background-color: #f4f4f5; /* Fondo gris claro suave */
     border: 1px solid #e4e4e7;
     border-radius: 8px; /* Bordes redondeados modernos */
     outline: none;
-    transition: all 0.2s ease;
-}
-
-/* Efecto al seleccionar o enfocar la barra */
-.search-box input:focus {
+    transition: all 0.2s ease;}
+    /* Efecto al seleccionar o enfocar la barra */
+  .search-box input:focus {
     background-color: #ffffff;
     border-color: #a1a1aa;
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);
-}
-/* $$$$$$$$$$$$$$$$$$$$$$$$ Adaptación para pantallas de celulares $$$$$$$$$$$$$$$$$$$$$$$$$ */
-@media (max-width: 768px) {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);}
+    /*$$$$$$$$$ Adaptación para pantallas de celulares $$$$$$$$$$ */
+  @media (max-width: 768px) {
     /* 1. Encabezado en columna centrada */
-    .main-header {
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px;
-        text-align: center;
-    }
-    html, body {
-        background-color: #ffffff;
-        margin: 0;
-        padding: 0;
-    }
-    .logo-img {
-        display: left;/*block*/
-        margin-left: 0;       /* Elimina el margen automático izquierdo */
-        margin-right: auto;/*auto Empuja el resto del espacio a la derecha */
-        max-width: 70px;     /* Ajusta el tamaño según prefieras */
-    }
+  .main-header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    text-align: center;}
+  html, body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;}
+  .logo-img {
+    display: block;/*block*/
+    margin-left: 0;       /* Elimina el margen automático izquierdo */
+    margin-right: auto;/*auto Empuja el resto del espacio a la derecha */
+    max-width: 70px;     /* Ajusta el tamaño según prefieras */}
     /* Forzar alinear el logo a la izquierda */
-    .header-top {
-        text-align: left; /* Cambia text-align: center por left */
-        padding-left: 5px; /* Agrega un pequeño margen para que no pegue al borde */
-    }
+  .header-top {
+    text-align: left; /* Cambia text-align: center por left */
+    padding-left: 5px;/*Agrega pequeño margen para que no pegue a borde*/}
     /* 2. Buscador a ancho completo */
-    .search-container {
-        width: 100%;
-        justify-content: center;
-    }
-
-    .search-input {
-        width: 100%;
-        max-width: 220px;
-    }
-
+  .search-container {
+    width: 100%;
+    justify-content: center;}
+   .search-input {
+     width: 100%;
+     max-width: 220px;}
+  .pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;}
+  .pagination li a {
+    padding: 5px 10px;
+    border: 1px solid gray;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;}
+  .pagination li a.active {
+    background: #0de;}
     /* 3. Catálogo en 1 sola columna */
-    .categories-grid, .catalog-grid {
-        grid-template-columns: 2fr !important;
-        gap: 15px;
-        padding: 10px;
-    }
-
-.cat-card {
+  .categories-grid, .catalog-grid {
+    grid-template-columns: 2fr !important;
+    gap: 15px;
+    padding: 10px;}
+  .cat-card {
     background-color: transparent; /* Quita el fondo blanco con sombra */
     border: none;                  /* Quita cualquier borde */
     border-radius: 0;
@@ -525,8 +388,7 @@ text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;            /* Centra todo el contenido */
-}
+    text-align: center;            /* Centra todo el contenido */}
   .ernie {
     background-color: transparent; /* Quita el fondo blanco con sombra */
     border: none;                  /* Quita cualquier borde */
@@ -536,9 +398,8 @@ text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;            /* Centra todo el contenido */
-}
- .orange {
+    text-align: center;            /* Centra todo el contenido */}
+  .orange {
     background-color: transparent; /* Quita el fondo blanco con sombra */
     border: none;                  /* Quita cualquier borde */
     border-radius: 0;
@@ -547,64 +408,55 @@ text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;            /* Centra todo el contenido */
-}
-    .frogbro {
+    text-align: center;            /* Centra todo el contenido */}
+  .frogbro {
     background-color: transparent; /* Quita el fondo blanco con sombra */
-    border: none;                  /* Quita cualquier borde */
+    border: none;/* Quita cualquier borde */
     border-radius: 0;
-    box-shadow: none;              /* Quita la sombra de la tarjeta */
+    box-shadow: none;/* Quita la sombra de la tarjeta */
     padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;            /* Centra todo el contenido */
-}
-/* Imagen del producto sobre fondo limpio */
-.cat-card img {
+    text-align: center;/* Centra todo el contenido */}
+    /* Imagen del producto sobre fondo limpio */
+  .cat-card img {
     max-width: 100%;
     height: auto;
     object-fit: contain;
     margin-bottom: 15px;
-    background-color: transparent;
-}
-  /* Imagen de marcas */
-.ernie img {
+    background-color: transparent;}
+    /* Imagen de marcas */
+  .ernie img {
     max-width: 30%;
     height: auto;
     object-fit: contain;
     margin-bottom: 15px;
-    background-color: transparent;
-}
+    background-color: transparent;}
     /* Imagen de marcas */
-.orange img {
+  .orange img {
     max-width: 40%;
     height: auto;
     object-fit: contain;
     margin-bottom: 15px;
-    background-color: transparent;
-}
+    background-color: transparent;}
     /* Imagen de marcas */
-.frogbro img {
+  .frogbro img {
     max-width: 40%;
     height: auto;
     object-fit: contain;
     margin-bottom: 15px;
-    background-color: transparent;
-}
-
-/* Título del producto */
-.cat-card h3, 
-.product-title {
+    background-color: transparent;}
+    /* Título del producto */
+  .cat-card h3, 
+  .product-title {
     font-size: 1rem;
     font-weight: 500;
-    color: #ffffff;
+    color: #111111;
     margin: 8px 0;
-    line-height: 1.3;
-}
-  
-/* Etiqueta de Oferta (Opcional, si la usas) */
-.badge-offer {
+    line-height: 1.3;}
+    /* Etiqueta de Oferta (Opcional, si la usas) */
+  .badge-offer {
     display: inline-block;
     padding: 4px 12px;
     border: 1px solid #999999;
@@ -612,21 +464,50 @@ text-decoration: none;
     font-size: 0.8rem;
     font-weight: bold;
     color: #555555;
-    margin: 8px 0;
-}
-
-/* Precios */
-.product-price {
+    margin: 8px 0;}
+    /* Precios */
+  .product-price {
     font-size: 1.1rem;
     font-weight: bold;
     color: #111111;
-    margin: 10px 0 15px 0;
-}
-
-.price-original {
+    margin: 10px 0 15px 0;}
+  .price-original {
     text-decoration: line-through;
     color: #888888;
     margin-right: 8px;
-    font-size: 0.95rem;
+    font-size: 0.95rem;}
+/* $$$$$$$$$$$$ */
+    .site-footer {
+  background-color: #121212;
+  color: #e0e0e0;
+  padding: 1.2rem 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
+
+.footer-inline {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;             /* Permite que los elementos bajen de línea si no caben */
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem 0.75rem;         /* Espacio vertical y horizontal */
+  text-align: center;
+  font-size: clamp(0.8rem, 2vw, 0.9rem);
+}
+
+.separator {
+  opacity: 0.5;
+}
+
+/* Esconde los separadores en pantallas muy pequeñas para evitar saltos extraños */
+@media (max-width: 600px) {
+  .separator {
+    display: none;
+  }
+  .footer-inline {
+    flex-direction: column;    /* Se convierte en columna limpia en celulares */
+    gap: 0.4rem;
+  }
 }
