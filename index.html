@@ -5,95 +5,83 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./style.css?v=2.0">
   <title>Hey Music Store | Online - Para instrumentos de cuerda - Bajo - Guitarra</title>
+  <style>
+    /* Regla para ocultar y mostrar las páginas seleccionadas */
+    .page {
+      display: none !important;
+    }
+    .page.active {
+      display: grid !important;
+    }
+  </style>
 </head>
 <body>
 <main class="container main-content">
-    <header class="main-header">
-      <!-- Boton Menu -->
-      <header>
-  <nav class="navbar">
-    <div class="logo">Menú</div>
-    
-    <!-- Botón de 3 rayas -->
-    <button class="menu-toggle" id="menu-toggle">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+  <header class="main-header">
+    <!-- Navegación -->
+    <nav class="navbar">
+      <div class="logo">Menú</div>
+      
+      <!-- Botón de 3 rayas -->
+      <button class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-    <!-- El menú que se esconde -->
-    <ul class="menu" id="menu">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#servicios">Servicios</a></li>
-      <li><a href="#nosotros">Nosotros</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
-<!-- Nombre de Tienda --><h2 style="
-    position: relative; 
-    top: -10px;          /* Subir / Bajar */
-    left: 18px;         /* Izquierda / Derecha */
-    color: #333333;     /* Color del texto */
-    font-size: 20px;    /* Tamaño de la letra */
-    text-align: left; /* Alineación del bloque */
-">
-   <strong>HEY MUSIC STORE</strong>
-</h2>
-<!-- Tienda online --><h2 style="
-    position: relative; 
-    top: -12px;          /* Subir / Bajar */
-    left: 20px;         /* Izquierda / Derecha */
-    color: 555555;     /* Color del texto */
-    font-size: 12px;    /* Tamaño de la letra*/
-    text-align: left; /* Alineación del bloque */
-">
-   Tienda Online
-</h2>
-      <!-- Barra de búsqueda alineada a la derecha -->
-<div class="search-box">    
+      <!-- Menú desplegable -->
+      <ul class="menu" id="menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Nombre de Tienda -->
+  <h2 style="position: relative; top: -10px; left: 18px; color: #333333; font-size: 20px; text-align: left;">
+    <strong>HEY MUSIC STORE</strong>
+  </h2>
+
+  <!-- Subtítulo -->
+  <h2 style="position: relative; top: -12px; left: 20px; color: #555555; font-size: 12px; text-align: left;">
+    Tienda Online
+  </h2>
+
+  <!-- Barra de búsqueda -->
+  <div class="search-box">    
     <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="11" cy="11" r="8"></circle>
         <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
     </svg>
-    <input type="text" id="searchInput" placeholder="¿Qué arículo estás buscando?..." onkeyup="filterProducts()"> 
-</div>
-    </header>
-    <section class="catalog">
-<!-- Catálogo --><h2 style="
-    position: relative; 
-    top: -10px;          /* Subir / Bajar */
-    left: 18px;         /* Izquierda / Derecha */
-    color: #333333;     /* Color del texto */
-    font-size: 18px;    /* Tamaño de la letra */
-    text-align: left; /* Alineación del bloque */
-">
-  <ul class="pagination">
-  <li a href="#">&laquo</a></li>
-</ul>
-  <ul>
-  <li a href="#">1</a></li>
-</ul>
-  <ul>
-  <li a href="#">2</a></li>
-</ul>
-<ul>
-  <li a href="#" class="active">3</a></li>
-</ul>
-<ul>
-  <li a href="#">&raquo</a></li>
-</ul>
-</h2>
-      Catálogo
-<!-- hasta acá cat-->
-    <div class="categories-grid">      
+    <input type="text" id="searchInput" placeholder="¿Qué artículo estás buscando?..." onkeyup="filterProducts()"> 
+  </div>
+
+  <!-- Catálogo -->
+  <section class="catalog">
+    <div class="catalog-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
+      <h2>Catálogo</h2>
+      <!-- Control de Paginación -->
+      <ul class="pagination">
+        <li><a href="javascript:void(0)" id="page-btn-1" class="page-num active" onclick="showPage(1)">1</a></li>
+        <li><a href="javascript:void(0)" id="page-btn-2" class="page-num" onclick="showPage(2)">2</a></li>
+        <li><a href="javascript:void(0)" id="page-btn-3" class="page-num" onclick="showPage(3)">3</a></li>
+        <li><a href="javascript:void(0)" id="page-btn-4" class="page-num" onclick="showPage(4)">4</a></li>
+        <li><a href="javascript:void(0)" id="page-btn-5" class="page-num" onclick="showPage(5)">5</a></li>
+      </ul>
+    </div>
+    <!-- =================================================================
+         PÁGINA 1: Pon los artículos que quieras mostrar en la Página 1
+         ================================================================= -->
+    <div class="categories-grid page active" id="page-1">      
       <div class="cat-card">
         <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02223-78.jpg?raw=true" alt="Guitar">
         <div class="card-details">
           <h3 class="product-title">Super Slinky Nickel Wound</h3>
           <p>Guitarra Eléctrica – Eb-P02223</p>          
           <p>Precio: Bs. 115</p>
-          <button class="btn-cart" onclick="addToCart('Super Slinky', 115)">Añadir al carrito</button>                            
+          <button class="btn-cart" onclick="addToCart('Super Slinky', 115)">Añadir al carrito</button>             
         </div>
       </div>
       <div class="cat-card">
@@ -114,6 +102,11 @@
           <button class="btn-cart" onclick="addToCart('Regular Slinky', 115)">Añadir al carrito</button>
         </div>
       </div>
+    </div>
+    <!-- =================================================================
+         PÁGINA 2: Pon los artículos que quieras mostrar en la Página 2
+         ================================================================= -->
+    <div class="categories-grid page" id="page-2">
       <div class="cat-card">
         <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02403-95.jpg?raw=true" alt="Guitar">
         <div class="card-details">
@@ -131,9 +124,14 @@
           <p>Precio: Bs. 120</p>
           <button class="btn-cart" onclick="addToCart('Acustic Metalic', 120)">Añadir al carrito</button>
         </div>
-      </div>
+      </div>      
+    </div>
+    <!-- =================================================================
+         PÁGINA 3: Pon los artículos que quieras mostrar en la Página 3
+         ================================================================= -->
+    <div class="categories-grid page" id="page-3">
       <div class="cat-card">
-        <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02832-210.jpg?raw=true">
+        <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02832-210.jpg?raw=true" alt="Bass">
         <div class="card-details">
           <h3 class="product-title">Regular Slinky Nickel Wound</h3>
           <p>Bajo Eléctrico – Eb-P02832</p>
@@ -142,7 +140,7 @@
         </div>
       </div>
       <div class="cat-card">
-        <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02824-288.jpg?raw=true">
+        <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02824-288.jpg?raw=true" alt="Bass 5">
         <div class="card-details">  
           <h3 class="product-title">Super Slinky 5 - Cuerdas Nickel</h3>
           <p>Wound Bajo Eléctrico – Eb-P02824</p>
@@ -151,7 +149,7 @@
         </div>
       </div>    
       <div class="cat-card">
-        <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02836-288.jpg?raw=true">
+        <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02836-288.jpg?raw=true" alt="Bass 5">
         <div class="card-details">          
           <h3 class="product-title">Regular Slinky 5 - Cuerdas Nickel</h3> 
           <p>Wound Bajo Eléctrico – Eb-P02836</p>
@@ -160,7 +158,7 @@
         </div>
       </div>      
       <div class="cat-card">
-        <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02838-318.jpg?raw=true">
+        <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02838-318.jpg?raw=true" alt="Bass 6">
         <div class="card-details">          
           <h3 class="product-title">Slinky Long Scale 6 - Cuerdas Nickel</h3> 
           <p>Wound Bajo Eléctrico – Eb-P02838</p>
@@ -169,42 +167,92 @@
         </div>
       </div>
     </div>
-</main>
-<p id="noResults" style="display: none; text-align: center; margin-top: 20px; color: #666;">
-    No se encontraron productos que coincidan con tu búsqueda.
-</p>
-<!-- Script Cesta de compras flotante desde acá -->
-<!-- Contenedor general del carrito flotante -->
-<div class="cart-container-floating" onclick="sendToWhatsApp()">
-    <div class="floating-cart">
-        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
-            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-        </svg>
-        <span class="cart-badge" id="cartBadge">0</span>
+    <!-- =================================================================
+         PÁGINA 4: Pon los artículos que quieras mostrar en la Página 4
+         ================================================================= -->
+    <div class="categories-grid page" id="page-4">
+      <div class="cat-card">
+        <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02403-95.jpg?raw=true" alt="Guitar">
+        <div class="card-details">
+          <h3 class="product-title">Guitarra Clásica Ernesto Palla</h3>
+          <p>Clear & Silver Nylon – Eb-P02403</p>          
+          <p>Precio: Bs. 150</p>
+          <button class="btn-cart" onclick="addToCart('Clasic Nylon', 150)">Añadir al carrito</button>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/IMG_2617.jpeg?raw=true" alt="Guitar">
+        <div class="card-details">
+          <h3 class="product-title">Earthwood Extra Light 80/20 Bronze</h3>
+          <p>Guitarra Acústica – Eb-P02006</p>          
+          <p>Precio: Bs. 120</p>
+          <button class="btn-cart" onclick="addToCart('Acustic Metalic', 120)">Añadir al carrito</button>
+        </div>
+      </div>      
     </div>
-    <!-- Etiqueta del Total -->
+    <!-- =================================================================
+         PÁGINA 5: Pon los artículos que quieras mostrar en la Página 5
+         ================================================================= -->
+    <div class="categories-grid page" id="page-5">
+      <div class="cat-card">
+        <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02403-95.jpg?raw=true" alt="Guitar">
+        <div class="card-details">
+          <h3 class="product-title">Guitarra Clásica Ernesto Palla</h3>
+          <p>Clear & Silver Nylon – Eb-P02403</p>          
+          <p>Precio: Bs. 150</p>
+          <button class="btn-cart" onclick="addToCart('Clasic Nylon', 150)">Añadir al carrito</button>
+        </div>
+      </div>
+      <div class="cat-card">
+        <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/IMG_2617.jpeg?raw=true" alt="Guitar">
+        <div class="card-details">
+          <h3 class="product-title">Earthwood Extra Light 80/20 Bronze</h3>
+          <p>Guitarra Acústica – Eb-P02006</p>          
+          <p>Precio: Bs. 120</p>
+          <button class="btn-cart" onclick="addToCart('Acustic Metalic', 120)">Añadir al carrito</button>
+        </div>
+      </div>      
+    </div>
+  </section>
+  <p id="noResults" style="display: none; text-align: center; margin-top: 20px; color: #666;">
+    No se encontraron productos que coincidan con tu búsqueda.
+  </p>
+
+  <!-- Carrito flotante -->
+  <div class="cart-container-floating" onclick="sendToWhatsApp()">
+    <div class="floating-cart">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+      </svg>
+      <span class="cart-badge" id="cartBadge">0</span>
+    </div>
     <div class="cart-total-label" id="cartTotal"><h3>Bs. 0.00</h3></div>
-</div>
-  <!-- Marcas --><h2 style="
-    position: relative; 
-    top: -10px;          /* Subir / Bajar */
-    left: 18px;         /* Izquierda / Derecha */
-    color: #333333;     /* Color del texto */
-    font-size: 18px;    /* Tamaño de la letra */
-    text-align: left; /* Alineación del bloque */
-">
-    Marcas
-</h2>
+  </div>
+
   <!-- Marcas -->
+  <h2 style="position: relative; top: -10px; left: 18px; color: #333333; font-size: 18px; text-align: left;">
+    Marcas
+  </h2>
+
   <div class="ernie">
-        <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/IMG_2582.PNG?raw=true" alt="ernie">    
-      </div>
+    <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/IMG_2582.PNG?raw=true" alt="ernie">    
+  </div>
   <div class="orange">
-      <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/IMG_2583.PNG?raw=true" alt="orange">          
-      </div>
+    <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/IMG_2583.PNG?raw=true" alt="orange">          
+  </div>
   <div class="frogbro">
-      <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/frogbro.jpg?raw=true" alt="Frogbro">          
-      </div>
+    <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/frogbro.jpg?raw=true" alt="Frogbro">          
+  </div>
+
+</main>
+
+<h2 style="position: relative; top: -10px; left: 15px; color: #555555; font-size: 10px; text-align: center;">
+  © 2026 Hey Music Store - Tienda online<br>
+  La Paz, Bolivia - Envíos a nivel nacional<br>
+  Distribución de artículos 100% originales<br>
+  ________________________________________
+</h2>
+
 <script>
   let cart = [];
   let totalAmount = 0;
@@ -213,71 +261,91 @@
     cart.push({ name: productName, price: price });
     totalAmount += price;
 
-    // Actualiza la cantidad de artículos y el monto total en pantalla
     document.getElementById('cartBadge').innerText = cart.length;
     document.getElementById('cartTotal').innerText = `Bs. ${totalAmount.toFixed(2)}`;
   }
 
   function sendToWhatsApp() {
     if (cart.length === 0) {
-        alert("Tu carrito está vacío. Añade algunos productos primero.");
-        return;
+      alert("Tu carrito está vacío. Añade algunos productos primero.");
+      return;
     }
 
-    // Listado ordenado de productos
     let itemList = cart.map(item => `- ${item.name} (Bs. ${item.price})`).join("\n");
     let fullMessage = `Hola, me gustaría comprar los siguientes productos:\n${itemList}\n\n*Total a pagar: Bs. ${totalAmount.toFixed(2)}*`;
 
     const phoneNumber = "59179171901";
     window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(fullMessage)}`, '_blank');
   }
+
+  /* Función de filtrado/búsqueda compatible con la paginación */
   function filterProducts() {
     const searchInput = document.getElementById('searchInput').value.toLowerCase().trim();
     const cards = document.querySelectorAll('.cat-card');
+    const pages = document.querySelectorAll('.page');
     let visibleCount = 0;
 
-    cards.forEach(card => {
+    if (searchInput !== "") {
+      // Muestra temporalmente todas las páginas para buscar en todo el catálogo
+      pages.forEach(p => p.classList.add('active'));
+      cards.forEach(card => {
         const cardText = card.innerText.toLowerCase();
-
         if (cardText.includes(searchInput)) {
-            card.style.display = "";
-            visibleCount++;
+          card.style.display = "";
+          visibleCount++;
         } else {
-            card.style.display = "none";
+          card.style.display = "none";
         }
-    });
+      });
+    } else {
+      // Si la búsqueda se limpia, vuelve a la página 1
+      cards.forEach(card => card.style.display = "");
+      showPage(1);
+      return;
+    }
 
-    // Mostrar u ocultar el mensaje de "sin resultados"
     const noResultsMsg = document.getElementById('noResults');
     if (noResultsMsg) {
-        noResultsMsg.style.display = visibleCount === 0 ? "block" : "none";
+      noResultsMsg.style.display = visibleCount === 0 ? "block" : "none";
     }
   }
-  </script>
-  <!-- Boton Menu -->
-  <script>
+
+  /* Menú Hamburguesa */
   const menuToggle = document.getElementById('menu-toggle');
   const menu = document.getElementById('menu');
   menuToggle.addEventListener('click', () => {
     menu.classList.toggle('active');
-    menuToggle.classList.toggle('active'); // para la animación X
+    menuToggle.classList.toggle('active');
   });
-  </script>
-  </body>
-  <!-- Logo o imagen de la tienda -->
-      <!--div class="logo-container"-->
-      <!--img src="logo.png" alt="Hey Music Store" class="logo-img"-->
-  <!-- Pie de página --><h2 style="
-    position: relative; 
-    top: -10px;          /* Subir / Bajar */
-    left: 15px;         /* Izquierda / Derecha */
-    color: #555555;     /* Color del texto */
-    font-size: 10px;    /* Tamaño de la letra */
-    text-align: center; /* Alineación del bloque */
-    ">
-    © 2026 Hey Music Store - Tienda online
-    La Paz, Bolivia - Envíos a nivel nacional 
-    Distribución de artículos 100% originales
-    ________________________________________
-</h2>
+
+  /* Cambiar manualmente entre Páginas */
+  function showPage(pageNumber) {
+    // 1. Ocultar todas las secciones de página
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(p => p.classList.remove('active'));
+
+    // 2. Desactivar todos los botones de la paginación
+    const btns = document.querySelectorAll('.page-num');
+    btns.forEach(btn => btn.classList.remove('active'));
+
+    // 3. Mostrar la página seleccionada y activar su botón
+    const activePage = document.getElementById(`page-${pageNumber}`);
+    if (activePage) {
+      activePage.classList.add('active');
+    }
+
+    const activeBtn = document.getElementById(`page-btn-${pageNumber}`);
+    if (activeBtn) {
+      activeBtn.classList.add('active');
+    }
+
+    // Asegura que los productos ocultos por búsquedas vuelvan a estar visibles
+    const cards = document.querySelectorAll('.cat-card');
+    cards.forEach(card => card.style.display = "");
+    
+    const noResultsMsg = document.getElementById('noResults');
+    if (noResultsMsg) noResultsMsg.style.display = "none";
+  }
+</script>
+</body>
 </html>
