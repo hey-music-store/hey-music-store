@@ -929,6 +929,32 @@
     const noResultsMsg = document.getElementById('noResults');
     if (noResultsMsg) noResultsMsg.style.display = "none";
   }
+  const cartModal = document.getElementById('cart-modal'); // Cambia por el ID de tu modal/ventana
+const openCartBtn = document.getElementById('cart-icon-btn'); // Cambia por el ID de tu icono flotante
+const closeCartBtn = document.getElementById('close-cart-btn'); // Cambia por el ID del botón de cerrar
+
+// Función para abrir el carrito
+function openCart() {
+  cartModal.classList.add('active'); // O la clase que uses para mostrar la ventana
+  document.body.classList.add('cart-open'); // Oculta el icono flotante
+}
+
+// Función para cerrar el carrito
+function closeCart() {
+  cartModal.classList.remove('active');
+  document.body.classList.remove('cart-open'); // Muestra de nuevo el icono flotante
+}
+
+// Event Listeners
+openCartBtn.addEventListener('click', openCart);
+closeCartBtn.addEventListener('click', closeCart);
+
+// Opcional: Si el usuario presiona la tecla ESC o hace clic fuera de la ventana para cerrar
+window.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape' && document.body.classList.contains('cart-open')) {
+    closeCart();
+  }
+});
 </script>
 
 </body>
