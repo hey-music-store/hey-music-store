@@ -510,4 +510,17 @@ html, body {
     flex-direction: column;    /* Se convierte en columna limpia en celulares */
     gap: 0.4rem;
   }
+  /* Estado normal del botón del carrito */
+.cart-icon-btn {
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Oculta el icono cuando el carrito está abierto */
+body.cart-open .cart-icon-btn {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; /* Evita clics accidentales mientras está invisible */
+}
 }
