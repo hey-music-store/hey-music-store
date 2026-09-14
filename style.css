@@ -78,7 +78,6 @@ body {
     padding: 20px 0;
     display: none; /* Escondido por defecto */
   }
-
   .menu.active {
     display: flex; /* Cuando le das click aparece */
   }
@@ -138,7 +137,22 @@ header {
     text-align: left; /* Cambia text-align: center por left */
     padding-left: 15px; /* Agrega un pequeño margen para que no pegue al borde */
 }
-
+.pagination {
+  diplay: flex;
+  justify-content: center;
+  list-style-type: none;
+padding: 0;
+}
+.pagination li a {
+  padding: 5px 10px;
+  border: 1px solid gray;
+margin: 5px;
+border-radius: 5px;
+text-decoration: none;
+}
+.pagination li a.active {
+  background: green;
+}
 /* ==================== 5. SECCIÓN DE CATALOGO ==================== */
 .main-content {
   margin-top: 30px;
