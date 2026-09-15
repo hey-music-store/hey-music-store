@@ -339,23 +339,6 @@ html, body {
     background-color: #ffffff;
     margin: 0;
     padding: 0;}
-    .menu {
-  display: none;
-  position: absolute;
-  top: 100%;             /* Se ubica justo debajo de la barra superior */
-  right: 0;              /* Se alinea exactamente a la derecha */
-  left: auto;            /* Cancela cualquier centrado previo */
-  background-color: #ffffff;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  border-radius: 8px;
-  padding: 10px 0;
-  z-index: 1000;
-}
-
-/* Cuando se presiona el botón y el menú se activa */
-.menu.active {
-  display: block;
-}
   .logo-img {
     display: block;/*block*/
     margin-left: 0;       /* Elimina el margen automático izquierdo */
