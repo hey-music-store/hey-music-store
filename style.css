@@ -154,8 +154,8 @@ html, body {
     /*=== Tamaño de las imagenes del catálogo ========================*/
   .cat-card img {
     width:350px;
-    height: 350px;
-    object-fit: cover;}
+    height: 550px;
+  }
     /*=== Tamaño de las marcas ========================*/
   .ernie img {
     width: 100px;
@@ -174,12 +174,7 @@ html, body {
     font-size: 16px;
     font-weight: bold;
     color: #111111;}
-    /* =========Boton Whatasapp ============*/
-  .whatsapp-bottom {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-    z-index: 1000;}/* +++++++++++++++++++++++++++++++++++++++ */
+    /* +++++++++++++++++++++++++++++++++++++++ */
     /* Contenedor principal de la caja de búsqueda */
   .search-box {
     position: relative;
@@ -344,6 +339,23 @@ html, body {
     background-color: #ffffff;
     margin: 0;
     padding: 0;}
+    .menu {
+  display: none;
+  position: absolute;
+  top: 100%;             /* Se ubica justo debajo de la barra superior */
+  right: 0;              /* Se alinea exactamente a la derecha */
+  left: auto;            /* Cancela cualquier centrado previo */
+  background-color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  padding: 10px 0;
+  z-index: 1000;
+}
+
+/* Cuando se presiona el botón y el menú se activa */
+.menu.active {
+  display: block;
+}
   .logo-img {
     display: block;/*block*/
     margin-left: 0;       /* Elimina el margen automático izquierdo */
@@ -471,13 +483,13 @@ html, body {
     font-weight: bold;
     color: #111111;
     margin: 10px 0 15px 0;}
-  .price-original {
+ .price-original {
     text-decoration: line-through;
     color: #888888;
     margin-right: 8px;
     font-size: 0.95rem;}
 /* $$$$$$$$$$$$ */
-    .site-footer {
+.site-footer {
   background-color: #121212;
   color: #e0e0e0;
   padding: 1.2rem 1rem;
