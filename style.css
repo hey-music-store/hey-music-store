@@ -44,9 +44,6 @@ html, body {
     background: #555555;/*wite*/
     transition: 0.3s;}
     /* Barra de Menú desplazada hacia abajo Para celular */
-  @media (max-width: 768px) {
-  .menu-toggle {
-     display: flex; /* Ahora sí se ve el botón */}}
   .navbar {
      flex-wrap: wrap;/*Permite menú desplegable baje a la siguiente fila*/}
   .menu {
@@ -329,6 +326,9 @@ html, body {
     box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.05);}
     /*$$$$$$$$$ Adaptación para pantallas de celulares $$$$$$$$$$ */
   @media (max-width: 768px) {
+      .menu-toggle {
+     display: flex; /* Ahora sí se ve el botón */
+     }
     /* 1. Encabezado en columna centrada */
   .main-header {
     flex-direction: column;
@@ -371,7 +371,7 @@ html, body {
     background: #0de;}
     /* 3. Catálogo en 1 sola columna */
   .categories-grid, .catalog-grid {
-    grid-template-columns: 2fr !important;
+    grid-template-columns: 1fr !important;
     gap: 15px;
     padding: 10px;}
   .cat-card {
@@ -497,7 +497,6 @@ html, body {
 }
 
 /* Esconde los separadores en pantallas muy pequeñas para evitar saltos extraños */
-@media (max-width: 600px) {
   .separator {
     display: none;
   }
