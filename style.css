@@ -20,7 +20,7 @@ html, body {
     background: #EFEFEF;/*color de fondo de menú desplazado*/
     padding: 15px 20px;
     color: #555555;/*color de letra menú*/}
-.pagination {
+  .pagination {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -247,8 +247,8 @@ html, body {
     position: fixed;
     bottom: 20px;
     right: 5px;
-    width: 600px;
-    height: 600px;
+    width: 60px;
+    height: 60px;
     background-color: #25d366; /* Verde WhatsApp */
     color: white;
     border-radius: 50%;
@@ -493,7 +493,6 @@ html, body {
   width: 100%;
   box-sizing: border-box;
 }
-
 .footer-inline {
   max-width: 1100px;
   margin: 0 auto;
@@ -505,11 +504,9 @@ html, body {
   text-align: center;
   font-size: clamp(0.8rem, 2vw, 0.9rem);
 }
-
 .separator {
   opacity: 0.5;
 }
-
 /* Esconde los separadores en pantallas muy pequeñas para evitar saltos extraños */
   .separator {
     display: none;
