@@ -15,8 +15,8 @@ html, body {
     /* %%%%% Boton Menú, Barra superior de Menú%%%%% */
   .navbar {
     display: flex;
-    justify-content: space-between;
-    align-items: center;/*center*/
+    /*justify-content: space-between;*/
+    align-items: right;/*center*/
     background: #EFEFEF;/*color de fondo de menú desplazado*/
     padding: 15px 20px;
     color: #555555;/*color de letra menú*/}
@@ -253,8 +253,8 @@ html, body {
     color: #dedede;/*white*/
     border-radius: 50%;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: right;/*center*/
+    /*justify-content: center;*/
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     z-index: 9999;
@@ -264,7 +264,7 @@ html, body {
     /* Contenedor principal alineado abajo a la derecha */
   .cart-container-floating {
     position: fixed;
-    bottom: 400px;
+    bottom: 800px;/* gggggggggggggggggggggggggggggggg*/
     right: 25px;
     display: flex;
     flex-direction: column;
