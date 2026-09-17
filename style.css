@@ -264,7 +264,7 @@ html, body {
     /* Contenedor principal alineado abajo a la derecha */
   .cart-container-floating {
     position: fixed;
-    bottom: 800px;/* gggggggggggggggggggggggggggggggg*/
+    bottom: 400px;/* Mover arriba el carrito de compras*/
     right: 25px;
     display: flex;
     flex-direction: column;
