@@ -53,7 +53,7 @@ html, body {
     cursor: pointer;}
     /* Las 3 rayas */
   .menu-toggle span {
-    width: 25px;
+    width: 800px;/*25*/
     height: 3px;
     background: #555555;/*wite*/
     transition: 0.3s;}
