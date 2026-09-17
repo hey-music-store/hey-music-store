@@ -82,7 +82,7 @@ html, body {
     /* Encabezado principal */
   .main-header {
     display: flex;
-    justify-content: space-between;/*Logo a la izquierda, luspa a derecha */
+    justify-content: space-between;/*Logo a la izquierda, lupa a derecha */
     align-items: center;            /* Centrados verticalmente */
     padding: 20px 40px;
     background-color: #ffffff;
@@ -248,7 +248,7 @@ html, body {
     bottom: 20px;
     right: 5px;
     width: 60px; /* 60-----------------------------------*/
-    height: 480px;
+    height: 100px;
     background-color: #25d366; /* Verde WhatsApp */
     color: #dedede;/*white*/
     border-radius: 50%;
