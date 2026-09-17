@@ -248,7 +248,7 @@ html, body {
     bottom: 20px;
     right: 5px;
     width: 60px;
-    height: 600px;
+    height: 60px;
     background-color: #25d366; /* Verde WhatsApp */
     color: white;
     border-radius: 50%;
@@ -264,7 +264,7 @@ html, body {
     /* Contenedor principal alineado abajo a la derecha */
   .cart-container-floating {
     position: fixed;
-    bottom: 400px;
+    bottom: 500px;
     right: 25px;
     display: flex;
     flex-direction: column;
