@@ -20,6 +20,20 @@ html, body {
     background: #EFEFEF;/*color de fondo de menú desplazado*/
     padding: 15px 20px;
     color: #555555;/*color de letra menú*/}
+.pagination {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;}
+  .pagination li a {
+    padding: 5px 10px;
+    border: 1px solid gray;
+    margin: 5px;
+    border-radius: 5px;
+    text-decoration: none;}
+  .pagination li a.active {
+    background: #0de;}
     /* El menú normal en PC */
   .menu {
     display: flex;
