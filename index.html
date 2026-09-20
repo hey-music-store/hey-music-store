@@ -393,12 +393,12 @@
     <section class="catalog">
       <div class="catalog-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
         <ul class="pagination">
-          <li><a href="javascript:void(0)" id="page-btn-4" class="page-num" onclick="showPage(4)">&laquo;</a></li>
+          <li><a href="javascript:void(0)" onclick="showPage(4)">&laquo;</a></li>
           <li><a href="javascript:void(0)" id="page-btn-1" class="page-num active" onclick="showPage(1)">1</a></li>
           <li><a href="javascript:void(0)" id="page-btn-2" class="page-num" onclick="showPage(2)">2</a></li>
           <li><a href="javascript:void(0)" id="page-btn-3" class="page-num" onclick="showPage(3)">3</a></li>
           <li><a href="javascript:void(0)" id="page-btn-4" class="page-num" onclick="showPage(4)">4</a></li>
-          <li><a href="javascript:void(0)" id="page-btn-1" class="page-num" onclick="showPage(1)">&raquo;</a></li>          
+          <li><a href="javascript:void(0)" onclick="showPage(1)">&raquo;</a></li>          
         </ul>
       </div>
       <hr style="border:0;height:1px;background-color:#dedede;">
@@ -420,7 +420,7 @@
             <div class="card-back">
               <div>
                 <h4>Super Slinky Nickel Wound</h4>
-                <p class="card-desc">Tensión súper liviana (.009 - .042) con un tono brillante, balanceado y excelente durabilidad. Fabricadas en EE.UU.</p>
+                <p class="card-desc">Eb Super Slinky Usadas Por Músicos Como Jimmy Page,Jeff Beck,Angus Young.Super Slinky Wound Hechas De Alambre De Acero Niquelado Envuelto Alrededor De Un Alambre Hexagonal De Acero De Núcleo.Las Cuerdas Lisas Están Hechas De Acero De Carbono Estañado Especialmente Templado Produciendo Un Tono Bien Balanceado Para Tu Guitarra. Calibres .009, .011, .016, .024W, .032, .042</p>
                 <div class="media-container">
                   <iframe src="https://www.youtube.com/embed/Xl8wItjiqKw" title="Demo Video" allowfullscreen></iframe>
                 </div>
@@ -445,7 +445,7 @@
             <div class="card-back">
               <div>
                 <h4>Hibrid Slinky Nickel Wound</h4>
-                <p class="card-desc">Combinación perfecta (.009 - .046) entre agudos suaves para solos y graves gruesos para riffs potentes.</p>
+                <p class="card-desc">Eb Hybrid Slinky Electric Strings Perfectas Para Aquellos A Quienes Les Gusta La Capacidad De Combinar Slinkys Super Y Regular.Wound Híbridas Slinky Hechas Alambre De Acero Niquelado Alrededor De Un Alambre De Núcleo De Acero Con Forma Hexagonal.Las Cuerdas Lisas Están Hechas De Acero De Alto Carbono Estañado Especialmente Templado Produciendo Un Tono Bien Balanceado.009,.011,.016,.026,.036,.046</p>
                 <div class="media-container">
                   <iframe src="https://www.youtube.com/embed/4elsRWh45tM" title="Demo Video" allowfullscreen></iframe>
                 </div>
@@ -470,7 +470,7 @@
             <div class="card-back">
               <div>
                 <h4>Regular Slinky Nickel Wound</h4>
-                <p class="card-desc">El estándar de la industria (.010 - .046). Utilizadas por los mejores guitarristas del mundo para todo estilo musical.</p>
+                <p class="card-desc">Slinky Regular Eb Las De Mayor Venta Y Preferidas Por Muchos Músicos De Todo El Mundo.Las Slinky Usadas Por Eric Clapton,John Mayer,Steve Vai.Slinky Regular Hechas De Alambre De Acero Niquelado Envuelto De Alambre De Núcleo De Acero Con Forma Hexagonal.Las Cuerdas Lisas Están Hechas De Acero De Carbono Estañado Especialmente Templado Produciendo Tono Bien Balanceado.010,.013,.017,.026,.036,.046</p>
                 <div class="media-container">
                   <iframe src="https://www.youtube.com/embed/NLnBdzmPZ24?list=PLSgBgfHBd5JzCRBB6B0J3lmhWkLQPBIMz" title="Demo Video" allowfullscreen></iframe>
                 </div>
@@ -478,8 +478,32 @@
               <button class="btn-back" onclick="unflipCard(event, this)">← Volver al producto</button>
             </div>
           </div>
+        </div>      
+      <!-- Artículo 4 -->
+        <div class="cat-card">
+          <div class="card-inner">
+            <div class="card-front">
+              <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-Cobalt.jpg?raw=true" alt="Guitar" onclick="flipCard(this)">
+              <div class="card-details">
+                <h3 class="product-title">Guitarra Eléctrica Regular Slinky Cobalt</h3> 
+                <p>Guitarra Eléctrica – Eb-P02721</p>          
+                <p>Precio: Bs. 185</p>
+                <button class="btn-cart" onclick="addToCart('Regular Slinky', 185)">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="card-back">
+              <div>
+                <h4>Regular Slinky Cobalt</h4>
+                <p class="card-desc">Slinky Cobalt Eb Laúltima Innovación Tecnologíca.Proporciona A Losguitarristas Nuevo Sonido,Las «C» De Cobalto Ofrecen Rango Dinámico Extendido,Respuesta Armónica ,Aumento De Gama Baja Y Niveles Nítidos,Claros.El Cobalto Proporciona Relación Magnética Más Fuerte Entre Pastillas Y Las C Que Cualquier Otra Aleación.Son Suaves Y Sedosas Al Tacto,Al Tocarlacuerdaseafácil.010,.013.017,.026,.036,.046</p>
+                <div class="media-container">
+                  <iframe src="https://www.youtube.com/embed/8v6B3miQihc?list=PLSgBgfHBd5JzCRBB6B0J3lmhWkLQPBIMz" title="Demo Video" allowfullscreen></iframe>
+                </div>
+              </div>
+              <button class="btn-back" onclick="unflipCard(event, this)">← Volver al producto</button>
+            </div>
+          </div>
         </div>
-      </div>      
+      </div>
 
       <!-- Página 2 -->
       <div class="categories-grid page" id="page-2">
@@ -500,7 +524,7 @@
             <div class="card-back">
               <div>
                 <h4>Ernesto Palla Concert Nylon</h4>
-                <p class="card-desc">Cuerdas de nylon transparente y entorchado de plata de calidad de concierto para un sonido cálido y rico en armónicos.</p>
+                <p class="card-desc">Las Cuerdas De Guitarra Clásica De Concierto Ernesto Palla Están Hechas De Un Filamento De Nylon Sólido,Las Cuerdas Cuarta, Quinta Y Sexta Están Hechas De Cobre Plateado Entorchado Sobre Un Núcleo De Hilo De Nylon Que Proporciona Un Tono Suave Y Rico.Calibres Primera .028, Segunda .032, Tercera .040, Cuarta .030, Quinta .036, Sexta .042 Tensión Media</p>
                 <div class="media-container">
                   <iframe src="https://www.youtube.com/embed/4elsRWh45tM" title="Demo Video" allowfullscreen></iframe>
                 </div>
@@ -541,6 +565,31 @@
         <div class="cat-card">
           <div class="card-inner">
             <div class="card-front">
+              <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-bajo4.jpg?raw=true" alt="Bass" onclick="flipCard(this)">
+              <div class="card-details">
+                <h3 class="product-title">Super Slinky Nickel Wound</h3>
+                <p>Bajo Eléctrico – Eb-P02834</p>
+                <p>Precio antes: Bs. <s>424.46</s></p>
+                <p>Precio: Bs. 390</p>
+                <button class="btn-cart" onclick="addToCart('Super Slinky Bass', 390)">Añadir al carrito</button>
+              </div>
+            </div>
+            <div class="card-back">
+              <div>
+                <h4>Super Slinky Nickel Wound Bajo Eléctrico</h4>
+                <p class="card-desc">El Set De Cuerdas Ernie Ball Super Slinky Para Bajo Están Elaboradas Para Obtener Un Tono Brillante Y Equilibrados. Cada Cuerda De Bajo Se Fabrica Con Las Materias Primas Más Finas Y Frescas En El Hermoso Valle Coachella Del Sur De California. La Lista De Músicos Que Usan Las Cuerdas De Bajo De Ernie Ball Slinky Es Muy Grande A Nivel Mundial. Calibres .045, .065, .080, .100</p>
+                <div class="media-container">
+                  <iframe src="https://www.youtube.com/embed/L4jbDxF6Zls?list=PLSgBgfHBd5JzCRBB6B0J3lmhWkLQPBIMz" title="Demo Video" allowfullscreen></iframe>
+                </div>
+              </div>
+              <button class="btn-back" onclick="unflipCard(event, this)">← Volver al producto</button>
+            </div>
+          </div>
+        </div>
+        <!-- Artículo 7 -->
+        <div class="cat-card">
+          <div class="card-inner">
+            <div class="card-front">
               <img src="https://github.com/nathan-gonzales100/hey-music-store/blob/main/EB-P02832-210.jpg?raw=true" alt="Bass" onclick="flipCard(this)">
               <div class="card-details">
                 <h3 class="product-title">Regular Slinky Nickel Wound</h3>
@@ -553,7 +602,7 @@
             <div class="card-back">
               <div>
                 <h4>Regular Slinky Bass</h4>
-                <p class="card-desc">Calibre .050 - .105. Encordado clásico de bajo con una pegada potente en frecuencias graves y definición nítida.</p>
+                <p class="card-desc">El Set De Cuerdas Ernie Ball Regular Slinky Para Bajo Están Elaboradas Para Obtener Un Tono Brillante Y Equilibrados. Cada Cuerda De Bajo Se Fabrica Con Las Materias Primas Más Finas Y Frescas En El Hermoso Valle Coachella Del Sur De California. La Lista De Músicos Que Usan Las Cuerdas De Bajo De Ernie Ball Slinky Es Muy Grande A Nivel Mundial. Calibres .050, .070, .085, .105</p>
                 <div class="media-container">
                   <iframe src="https://www.youtube.com/embed/L4jbDxF6Zls?list=PLSgBgfHBd5JzCRBB6B0J3lmhWkLQPBIMz" title="Demo Video" allowfullscreen></iframe>
                 </div>
@@ -561,8 +610,8 @@
               <button class="btn-back" onclick="unflipCard(event, this)">← Volver al producto</button>
             </div>
           </div>
-        </div>      
-        <!-- Artículo 7 -->
+        </div>
+        <!-- Artículo 8 -->
         <div class="cat-card">
           <div class="card-inner">
             <div class="card-front">
@@ -578,7 +627,7 @@
             <div class="card-back">
               <div>
                 <h4>Super Slinky Bass 5 Cuerdas</h4>
-                <p class="card-desc">Tensión suave (.040 - .125) para bajo de 5 cuerdas. Facilidad de ejecución con respuesta profunda en la 5ta cuerda.</p>
+                <p class="card-desc">El Set De Cuerdas Ernie Ball Power Slinky De 5 Cuerdas Para Bajo Están Elaboradas Para Obtener Un Tono Brillante Y Equilibrados. Cada Cuerda De Bajo Se Fabrica Con Las Materias Primas Más Finas Y Frescas En El Hermoso Valle Coachella Del Sur De California. La Lista De Músicos Que Usan Las Cuerdas De Bajo De Ernie Ball Slinky Es Muy Grande A Nivel Mundial . .040, .060, .075, .95 .125</p>
                 <div class="media-container">
                   <iframe src="https://www.youtube.com/embed/PVpEMRzhq5E" title="Demo Video" allowfullscreen></iframe>
                 </div>
@@ -588,7 +637,7 @@
           </div>
         </div>    
 
-        <!-- Artículo 8 -->
+        <!-- Artículo 9 -->
         <div class="cat-card">
           <div class="card-inner">
             <div class="card-front">
@@ -604,7 +653,7 @@
             <div class="card-back">
               <div>
                 <h4>Regular Slinky Bass 5 Cuerdas</h4>
-                <p class="card-desc">Calibre balanceado (.045 - .130). Cuerpo masivo y excelente presencia en cualquier mezcla de audio.</p>
+                <p class="card-desc">El Set De 5 Cuerdas Ernie Ball Regular Slinky Para Bajo Están Elaboradas Para Obtener Un Tono Brillante Y Equilibrados. Cada Cuerda De Bajo Se Fabrica Con Las Materias Primas Más Finas Y Frescas En El Hermoso Valle Coachella Del Sur De California. La Lista De Músicos Que Usan Las Cuerdas De Bajo De Ernie Ball Slinky Es Muy Grande A Nivel Mundial. Calibres .045, .065, .080, .100 .130</p>
                 <div class="media-container">
                   <iframe src="https://www.youtube.com/embed/YD1JyJdmWko?list=PLSgBgfHBd5JzCRBB6B0J3lmhWkLQPBIMz" title="Demo Video" allowfullscreen></iframe>
                 </div>
@@ -614,7 +663,7 @@
           </div>          
         </div>      
 
-        <!-- Artículo 9 -->
+        <!-- Artículo 10 -->
         <div class="cat-card">
           <div class="card-inner">
             <div class="card-front">
@@ -630,7 +679,7 @@
             <div class="card-back">
               <div>
                 <h4>Slinky Bass 6 Cuerdas</h4>
-                <p class="card-desc">Set completo para bajos de 6 cuerdas (.032 - .130). Entorchado niquelado de máxima calidad para tono equilibrado.</p>
+                <p class="card-desc">El Set De 6 Cuerdas Para Bajo Se Elaboran Para Lograr Un Tono Brillante Y Equilibrado. Diseñado Para Bajos Con Una Escala De 34 Pulgadas, La Longitud Total De La Cuerda Es De 48″ Y Comienza De 37 1/4″ Calibres .032, .045, .065, .080, .0100 .130</p>
                 <div class="media-container">
                   <iframe src="https://www.youtube.com/embed/PVpEMRzhq5E" title="Demo Video" allowfullscreen></iframe>
                 </div>
@@ -642,7 +691,7 @@
       </div>
         <!-- Página 4 -->
       <div class="categories-grid page" id="page-4">
-      <!-- Artículo 10 -->
+      <!-- Artículo 11 -->
         <div class="cat-card">
           <div class="card-inner">
             <div class="card-front">
@@ -994,6 +1043,5 @@ window.addEventListener('keydown', (e) => {
   }
 });
 </script>
-
 </body>
 </html>
