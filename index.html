@@ -806,19 +806,7 @@
         <!-- Los totales y el botón de comprar o mensaje se generarán aquí -->
       </div>
     </div>
-  </div>
-
-<!-- Pagination 2 -->
-      <div class="catalog-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-        <ul class="pagination">
-          <li><a href="#">&laquo;</a></li>
-          <li><a href="javascript:void(0)" id="page-btn-1" class="page-num active" onclick="showPage(1)">1</a></li>
-          <li><a href="javascript:void(0)" id="page-btn-2" class="page-num" onclick="showPage(2)">2</a></li>
-          <li><a href="javascript:void(0)" id="page-btn-3" class="page-num" onclick="showPage(3)">3</a></li>
-          <li><a href="javascript:void(0)" id="page-btn-4" class="page-num" onclick="showPage(4)">4</a></li>
-          <li><a href="#">&raquo;</a></li> 
-        </ul>
-      </div>
+  </div> 
 </main>
 
 <footer class="site-footer">
@@ -833,7 +821,6 @@
 
 <script>
   let cart = [];
-
   function flipCard(imgElement) {
     const card = imgElement.closest('.cat-card');
     if (card) {
