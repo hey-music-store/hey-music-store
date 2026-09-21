@@ -13,7 +13,9 @@ html, body {
 .logo {
   position: absolute;
   left: 20px; /* Distancia desde la izquierda */
-  top: 20px;   /* Distancia desde arriba */
+  top: 20px;/* Distancia desde arriba */
+  width: 10px;
+  height: auto;
 }
     /* ============= RESET Y CONFIGURACIÓN BÁSICA =============== */
   * {
