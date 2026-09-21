@@ -3,14 +3,14 @@ html, body {
     margin: 0;
     padding: 0;}
 /* Contenedor que delimita las coordenadas */
-.contenedor {
+.pantalla {
   position: relative;
   width: 100%;
   height: 500px;
 }
 
 /* Texto ubicado en las coordenadas exactas X: 150px, Y: 80px */
-.titulo {
+.logo {
   position: absolute;
   left: 20px; /* Distancia desde la izquierda */
   top: 20px;   /* Distancia desde arriba */
