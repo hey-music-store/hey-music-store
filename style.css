@@ -3,18 +3,25 @@ html, body {
     margin: 0;
     padding: 0;}
 /* Contenedor que delimita las coordenadas */
+.cat {
+  position: absolute;
+  left: 150px; /* Distancia desde la izquierda */
+  top: 120px;/* Distancia desde arriba */
+  width: 140px;
+  height: auto;
+}
 .pantalla {
   position: relative;
-  width: 100%;
-  height: 500px;
+  width: 100%;/*100*/
+  height: 60px;/*500*/
 }
 
 /* Texto ubicado en las coordenadas exactas X: 150px, Y: 80px */
 .logo {
   position: absolute;
-  left: 20px; /* Distancia desde la izquierda */
-  top: 20px;/* Distancia desde arriba */
-  width: 10px;
+  left: 320px; /* Distancia desde la izquierda */
+  top: -82px;/* Distancia desde arriba */
+  width: 70px;
   height: auto;
 }
     /* ============= RESET Y CONFIGURACIÓN BÁSICA =============== */
@@ -40,7 +47,10 @@ html, body {
     flex-direction: row;
     justify-content: center;
     list-style-type: none;
-    padding: 0;}
+    padding: 0;
+    position: absolute;
+    left: 80px;
+  }
   .pagination li a {
     padding: 5px 10px;
     border: 1px solid gray;
@@ -74,11 +84,15 @@ html, body {
     transition: 0.3s;}
     /* Barra de Menú desplazada hacia abajo Para celular */
   .navbar {
-     flex-wrap: wrap;/*Permite menú desplegable baje a la siguiente fila*/}
+     flex-wrap: wrap;
+     position: absolute;
+     left: 0px;
+     top: 5px;
+     width: 20%;/*Permite menú desplegable baje a la siguiente fila*/}
   .menu {
-    position: relative;
-    /*top: 60px;*/
-    left: 0;
+    position: absolute;
+    top: 40px;/*distancia de despliegue del menu*/
+    left: 0px;
     width: 100%;
     background: #EFEFEF;/*Gris claro*/
     flex-direction: column;
@@ -105,7 +119,8 @@ html, body {
     /* Contenedor del buscador */
   .search-container {
     display: flex;
-    align-items: center;}
+    align-items: center;
+  }
     /* Campo de entrada de texto */
   .search-input {
     padding: 10px 15px;
@@ -209,12 +224,6 @@ html, body {
     width: 90%;
     max-width: 380px; /* Ancho ajustable según el diseño */}
     /* Contenedor principal con posicionamiento relativo */
-  .search-box {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 90%;
-    max-width: 400px;}
     /* Icono de la lupa dentro del campo */
   .search-icon {
     position: absolute;
@@ -380,10 +389,19 @@ html, body {
     /* 2. Buscador a ancho completo */
   .search-container {
     width: 80%;
-    justify-content: center;}
+    justify-content: center;
+  }
    .search-input {
-     width: 80%;
-     max-width: 220px;}
+     width: 200%;
+     max-width: 40px;}
+    
+  .search-box {
+    position: absolute;
+    left: 80px; /* Distancia desde la izquierda */
+    top: 75px;/* Distancia desde arriba */
+    width: 300px;
+    height: auto;
+}
       /* 3. Catálogo en 1 sola columna */
   .categories-grid, .catalog-grid {
     grid-template-columns: 1fr !important;
