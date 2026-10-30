@@ -20,7 +20,7 @@ html, body {
 .logo {
   position: absolute;
   left: 5px; /* Distancia desde la izquierda */
-  top: 2px;/* Distancia desde arriba */
+  top: -20px;/* Distancia desde arriba */
   width: 70px;
   height: auto;
 }
