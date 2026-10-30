@@ -19,8 +19,8 @@ html, body {
 /* Texto ubicado en las coordenadas exactas X: 150px, Y: 80px */
 .logo {
   position: absolute;
-  left: 320px; /* Distancia desde la izquierda */
-  top: -82px;/* Distancia desde arriba */
+  left: 10px; /* Distancia desde la izquierda */
+  top: 60px;/* Distancia desde arriba */
   width: 70px;
   height: auto;
 }
