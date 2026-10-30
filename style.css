@@ -19,8 +19,8 @@ html, body {
 /* Texto ubicado en las coordenadas exactas X: 150px, Y: 80px */
 .logo {
   position: absolute;
-  left: 5px; /* Distancia desde la izquierda */
-  top: -20px;/* Distancia desde arriba */
+  left: 380px; /* Distancia desde la izquierda */
+  top: -60px;/* Distancia desde arriba */
   width: 70px;
   height: auto;
 }
@@ -87,7 +87,7 @@ html, body {
      flex-wrap: wrap;
      position: absolute;
      left: 0px;
-     top: 65px;
+     top: 5px;
      width: 20%;/*Permite menú desplegable baje a la siguiente fila*/}
   .menu {
     position: absolute;
